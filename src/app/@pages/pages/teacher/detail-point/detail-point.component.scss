@@ -1,0 +1,33 @@
+.point-container {
+  background-color: rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.responsive-table {
+  li {
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .table-row {
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+  .col-1 {
+    flex-basis: 10%;
+  }
+  .col-2 {
+    flex-basis: 40%;
+  }
+  .col-3 {
+    flex-basis: 25%;
+  }
+  .col-4 {
+    flex-basis: 25%;
+  }
+}

@@ -1,0 +1,42 @@
+.gene-base-container {
+  height: calc(100% - 60px);
+}
+
+.menu-item-link {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.menu-item-sub-link {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    background-color: rgba(0,0,0,.04);
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+button:focus {
+
+  outline: none;
+}
+
+.color-red {
+
+  color: red;
+}
+
+.color-red:hover {
+
+  color: red;
+}

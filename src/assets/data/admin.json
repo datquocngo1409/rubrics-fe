@@ -1,0 +1,86 @@
+{
+    "admin.account":
+        {
+            "label": "Account Admin",
+            "routerLink": "admin/account",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.device":
+        {
+            "label": "Device Admin",
+            "routerLink": "admin/device",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.driver":
+        {
+            "label": "Driver Admin",
+            "routerLink": "admin/driver",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.geozone":
+        {
+            "label": "Geozone Admin",
+            "routerLink": "admin/geozone",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.group":
+        {
+            "label": "Group Admin",
+            "routerLink": "admin/group",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.maintenance":
+        {
+            "label": "Maintenance Admin",
+            "routerLink": "admin/maintenance",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.role":
+        {
+            "label": "Role Admin",
+            "routerLink": "admin/role",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.rule":
+        {
+            "label": "Rule Admin",
+            "routerLink": "admin/rule",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.schedule":
+        {
+            "label": "Schedule Admin",
+            "routerLink": "admin/schedule",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.statusCode":
+        {
+            "label": "Status Code Admin",
+            "routerLink": "admin/status-code",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.user":
+        {
+            "label": "User Admin",
+            "routerLink": "admin/user",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "admin.sysadmin":
+        {
+            "label": "Sysadmin",
+            "routerLink": "admin/sysadmin",
+            "iconType": "letter",
+            "iconName": "c"
+        }
+}

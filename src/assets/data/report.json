@@ -1,0 +1,114 @@
+{
+    "report.driverSafety":
+        {
+            "label": "Driver Safety Scoring Report",
+            "routerLink": "report/driver-safety",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.eventDetail":
+        {
+            "label": "Event Detail Report",
+            "routerLink":"report/event-details",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.extendedEventDetail":
+        {
+            "label": "Extended Event Detail Report",
+            "routerLink": "report/extended-event-detail",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.extendedVehicleSafety":
+        {
+            "label": "Extended Vehicle Safety Report",
+            "routerLink": "report/extended-vehicle-safety",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.geozone":
+        {
+            "label": "Geozone Report",
+            "routerLink": "report/geozone-report",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.idle":
+        {
+            "label": "Idle Report",
+            "routerLink": "report/idle",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.journey":
+        {
+            "label": "Journey Report",
+            "routerLink": "report/journey",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.lastKnownLocation":
+        {
+            "label": "Last Known Location Report",
+            "routerLink": "report/last-known-vehicle-location",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.outOfHourMovement":
+        {
+            "label": "Out Of Hours Movement Report",
+            "routerLink": "report/out-of-hours-movement",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.overSpeed":
+        {
+            "label": "Over Speed Report",
+            "routerLink": "report/over-speed",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.pto":
+        {
+            "label": "Pto Report",
+            "routerLink": "report/pto-report",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.speedChart":
+        {
+            "label": "Speed Chart Report",
+            "routerLink": "report/speed-chart",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.speedGraph":
+        {
+            "label": "Speed Graph Report",
+            "routerLink": "report/speed-graph",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.stopTime":
+        {
+            "label": "Stop Time Report",
+            "routerLink": "report/stop-time-report",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.stopTimeFleetSummary":
+        {
+            "label": "Stop Time Fleet Summary Report",
+            "routerLink": "report/stop-time-fleet-summary",
+            "iconType": "letter",
+            "iconName": "c"
+        },
+    "report.vehicleSafety":
+        {
+            "label": "Vehicle Safety Scoring Report",
+            "routerLink": "report/vehicle-safety",
+            "iconType": "letter",
+            "iconName": "c"
+        }
+}

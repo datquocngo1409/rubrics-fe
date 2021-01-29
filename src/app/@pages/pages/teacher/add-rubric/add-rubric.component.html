@@ -1,0 +1,106 @@
+<div fxLayout="row wrap" fxLayoutAlign=" start" class="gene-form-wizard">
+    <mat-card fxFlex="100%">
+        <h2><b>Rubrics Controller</b></h2>
+        <div class="gene-card-title">
+            <div fxLayout="row" fxLayoutAlign="start center">
+                <div fxLayout="column">
+                    <h4 *ngIf="ACTION === 'new'">{{'BUTTON.New'|translate}} {{'ADMIN.RUBRIC.Rubric'|translate}}</h4>
+                    <h4 *ngIf="ACTION === 'edit'">{{'BUTTON.Edit'|translate}} {{'ADMIN.RUBRIC.Rubric'|translate}}</h4>
+                </div>
+                <span fxFlex></span>
+            </div>
+            <mat-divider></mat-divider>
+        </div>
+        <div class="gene-card-content">
+            <form [formGroup]="detailForm" (ngSubmit)="onSubmit()">
+                <div class="row {{isView(ACTION)}}">
+                    <div class="deviceDto">
+                        <div class="choosedDevices">
+                            <h3>{{'ADMIN.GROUP.InGroup' | translate}}</h3>
+                            <h4>Total Point: {{totalPoint}}</h4>
+                            <div class="containerDevices">
+                                <ul class="responsive-table">
+                                    <li class="table-row {{this.isSelectedChoosed(i)}}"
+                                        *ngFor="let rubric of choosedRubric; index as i" (click)="selectChoosedDevice(i)">
+                                        <div class="col col-2"><span title="({{(100 * rubric.important / this.totalPoint).toFixed(2)}} %)">({{(100 * rubric.important / this.totalPoint).toFixed(2)}} %)</span></div>
+                                        <div class="col col-4"><span title="{{rubric.rubricName}}">{{rubric.rubricName}}</span></div>
+                                        <div class="col col-4">
+                                            <mat-select [(value)]="rubric.important" (selectionChange)="recalculateTotalPoint()">
+                                                <mat-option [value]="1">1</mat-option>
+                                                <mat-option [value]="2">2</mat-option>
+                                                <mat-option [value]="5">5</mat-option>
+                                                <mat-option [value]="10">10</mat-option>
+                                                <mat-option [value]="15">15</mat-option>
+                                                <mat-option [value]="20">20</mat-option>
+                                                <mat-option [value]="25">25</mat-option>
+                                                <mat-option [value]="30">30</mat-option>
+                                                <mat-option [value]="35">35</mat-option>
+                                                <mat-option [value]="40">40</mat-option>
+                                                <mat-option [value]="45">45</mat-option>
+                                                <mat-option [value]="50">50</mat-option>
+                                                <mat-option [value]="55">55</mat-option>
+                                                <mat-option [value]="60">60</mat-option>
+                                                <mat-option [value]="65">65</mat-option>
+                                                <mat-option [value]="70">70</mat-option>
+                                                <mat-option [value]="75">75</mat-option>
+                                                <mat-option [value]="80">80</mat-option>
+                                                <mat-option [value]="85">85</mat-option>
+                                                <mat-option [value]="90">90</mat-option>
+                                                <mat-option [value]="95">95</mat-option>
+                                                <mat-option [value]="100">100</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="buttonMove">
+                            <div class="center">
+                                <span class="material-icons buttonTop" (click)="choosed()">reply</span>
+                                <span class="material-icons buttonBottom" (click)="unchoosed()">reply</span>
+                            </div>
+                        </div>
+                        <div class="unchoosedDevices">
+                            <h3>{{'ADMIN.GROUP.NotInGroup' | translate}}</h3>
+                            <h4>Choose to Add</h4>
+                            <div class="containerDevices">
+                                <ul class="responsive-table">
+                                    <li class="table-row {{this.isSelectedUnchoosed(i)}}"
+                                        *ngFor="let rubric of unchoosedRubric; index as i"
+                                        (click)="selectUnchoosedDevice(i)">
+                                        <div class="col col-5" style="align-content: center"><span title="{{rubric.rubricName}}">{{rubric.rubricName}}</span></div>
+                                        <div class="col col-5">
+                                            <mat-select [(value)]="rubric.important">
+                                                <mat-option [value]="1">1</mat-option>
+                                                <mat-option [value]="2">2</mat-option>
+                                                <mat-option [value]="5">5</mat-option>
+                                                <mat-option [value]="10">10</mat-option>
+                                                <mat-option [value]="20">20</mat-option>
+                                                <mat-option [value]="30">30</mat-option>
+                                                <mat-option [value]="40">40</mat-option>
+                                                <mat-option [value]="50">50</mat-option>
+                                                <mat-option [value]="60">60</mat-option>
+                                                <mat-option [value]="70">70</mat-option>
+                                                <mat-option [value]="100">100</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pad-wrap justify-content-end">
+                    <mat-card-actions class="float-right">
+                        <button mat-raised-button color="warn" type="button"
+                                (click)="requestNewRubric()">{{'BUTTON.RequestNew'|translate}} {{'ADMIN.RUBRIC.Rubric'|translate}}</button>
+                        <button mat-raised-button color="warn" type="button"
+                                (click)="onCancel()">{{'BUTTON.Cancel'|translate}}</button>
+                        <button mat-raised-button color="primary" type="submit"
+                                [disabled]="!detailForm.valid">{{'BUTTON.Update'|translate}}</button>
+                    </mat-card-actions>
+                </div>
+            </form>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,147 @@
+{
+    "admin": {
+        "admin.account": {
+            "name": "Account Admin",
+            "state": "admin/account",
+            "type": "link"
+        },
+        "admin.device": {
+            "name": "Device Admin",
+            "state": "admin/device",
+            "type": "link"
+        },
+        "admin.driver": {
+            "name": "Driver Admin",
+            "state": "admin/driver",
+            "type": "link"
+        },
+        "admin.geozone": {
+            "name": "Geozone Admin",
+            "state": "admin/geozone",
+            "type": "link"
+        },
+        "admin.group": {
+            "name": "Group Admin",
+            "state": "admin/group",
+            "type": "link"
+        },
+        "admin.maintenance": {
+            "name": "Maintenance Admin",
+            "state": "admin/maintenance",
+            "type": "link"
+        },
+        "admin.role": {
+            "name": "Role Admin",
+            "state": "admin/role",
+            "type": "link"
+        },
+        "admin.rule": {
+            "name": "Rule Admin",
+            "state": "admin/rule",
+            "type": "link"
+        },
+        "admin.schedule": {
+            "name": "Schedule Admin",
+            "state": "admin/schedule",
+            "type": "link"
+        },
+        "admin.statusCode": {
+            "name": "Status Code Admin",
+            "state": "admin/status-code",
+            "type": "link"
+        },
+        "admin.user": {
+            "name": "User Admin",
+            "state": "admin/user",
+            "type": "link"
+        },
+        "admin.sysadmin":
+        {
+            "name": "Sysadmin",
+            "state": "admin/sysadmin",
+            "type": "link"
+        }
+    },
+    "report": {
+        "report.driverSafety": {
+            "name": "Driver Safety Scoring Report",
+            "state": "report/driver-safety",
+            "type": "link"
+        },
+        "report.eventDetail": {
+            "name": "Event Detail Report",
+            "state": "report/event-details",
+            "type": "link"
+        },
+        "report.extendedEventDetail": {
+            "name": "Extended Event Detail Report",
+            "state": "report/extended-event-detail",
+            "type": "link"
+        },
+        "report.extendedVehicleSafety": {
+            "name": "Extended Vehicle Safety Report",
+            "state": "report/extended-vehicle-safety",
+            "type": "link"
+        },
+        "report.geozone": {
+            "name": "Geozone Report",
+            "state": "report/geozone-report",
+            "type": "link"
+        },
+        "report.idle": {
+            "name": "Idle Report",
+            "state": "report/idle",
+            "type": "link"
+        },
+        "report.journey": {
+            "name": "Journey Report",
+            "state": "report/journey",
+            "type": "link"
+        },
+        "report.lastKnownLocation": {
+            "name": "Last Known Location Report",
+            "state": "report/last-known-vehicle-location",
+            "type": "link"
+        },
+        "report.outOfHourMovement": {
+            "name": "Out Of Hours Movement Report",
+            "state": "report/out-of-hours-movement",
+            "type": "link"
+        },
+        "report.overSpeed": {
+            "name": "Over Speed Report",
+            "state": "report/over-speed",
+            "type": "link"
+        },
+        "report.pto": {
+            "name": "Pto Report",
+            "state": "report/pto-report",
+            "type": "link"
+        },
+        "report.speedChart": {
+            "name": "Speed Chart Report",
+            "state": "report/speed-chart",
+            "type": "link"
+        },
+        "report.speedGraph": {
+            "name": "Speed Graph Report",
+            "state": "report/speed-graph",
+            "type": "link"
+        },
+        "report.stopTime": {
+            "name": "Stop Time Report",
+            "state": "report/stop-time-report",
+            "type": "link"
+        },
+        "report.stopTimeFleetSummary": {
+            "name": "Stop Time Fleet Summary Report",
+            "state": "report/stop-time-fleet-summary",
+            "type": "link"
+        },
+        "report.vehicleSafety": {
+            "name": "Vehicle Safety Scoring Report",
+            "state": "report/vehicle-safety",
+            "type": "link"
+        }
+    }
+}

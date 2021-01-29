@@ -1,0 +1,88 @@
+.header {
+  border-left: 5px solid #448AFF;
+  margin-left: 10px;
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.float-left {
+  float: left;
+}
+
+.right {
+  float: right;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-90 {
+  width: 90%;
+}
+
+.width-10 {
+  width: 10%;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.fixed {
+  table-layout: fixed;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: #E0E0E0;
+  border: 2px solid;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.mat-table {
+  overflow: auto;
+  font-family: "Open Sans", sans-serif
+}
+
+.mat-header-cell.mat-sort-header-sorted {
+  color: black;
+}
+
+.mat-sort-header-container {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+:host ::ng-deep.mat-paginator .mat-paginator-container {
+  justify-content: flex-start !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: 46px !important;
+  padding: 0 8px;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  font-size: 14px !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.btn {
+  text-transform: none;
+}
+
+.mat-sort-header-button {
+  font-size: larger !important;
+  font-weight: bold !important;
+
+}

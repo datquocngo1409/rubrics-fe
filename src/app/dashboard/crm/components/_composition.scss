@@ -1,0 +1,50 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    cursor: pointer;
+    width: 50%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    border-radius: .2rem;
+    position: absolute;
+    z-index: 10;
+    outline-offset: 1rem;
+    transition: 1s;
+
+    &--p1 {
+      left: 0;
+      top: -2rem;
+      &:hover {
+        z-index: 15;
+        outline: 5px solid $color-primary;
+        animation-name: normal-to-bigger;
+        animation-duration: .5s;
+        transform: scale(1.2);
+      }
+    }
+
+    &--p2 {
+      right: 2rem;
+      top: 2rem;
+      &:hover {
+        z-index: 15;
+        outline: 5px solid $color-primary;
+        animation-name: normal-to-bigger;
+        animation-duration: .5s;
+        transform: scale(1.2);
+      }
+    }
+
+    &--p3 {
+      left: 10%;
+      top: 10rem;
+      &:hover {
+        z-index: 15;
+        outline: 5px solid $color-primary;
+        animation-name: normal-to-bigger;
+        animation-duration: .5s;
+        transform: scale(1.2);
+      }
+    }
+  }
+}

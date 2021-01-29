@@ -1,0 +1,109 @@
+<div fxLayout="row wrap" fxLayoutAlign=" start" class="gene-form-wizard" class="container">
+    <mat-card fxFlex="100%">
+        <div class="gene-card-title">
+            <h3 class="header">
+                <span *ngIf="ACTION === 'NEW'">{{"ADMIN.New" | translate}} {{"SUBJECT.Subject" | translate}}</span>
+                <span *ngIf="ACTION === 'EDIT'">{{"ADMIN.Edit" | translate}} {{"SUBJECT.Subject" | translate}}</span>
+            </h3>
+            <mat-divider></mat-divider>
+        </div>
+        <div class="gene-card-content" *ngIf="ACTION === 'NEW'">
+            <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="form">
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+                        <input matInput placeholder="{{'ADMIN.Code' | translate}}" formControlName="code">
+                        <mat-error *ngIf="!formGroup.controls['code'].valid && formGroup.controls['code'].touched">
+                            {{'ADMIN.Code' | translate}} {{'ERROR.IsRequired' | translate}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+                        <input matInput placeholder="{{'ADMIN.Name' | translate}}" formControlName="name">
+                        <mat-error *ngIf="!formGroup.controls['name'].valid && formGroup.controls['name'].touched">
+                            {{'ADMIN.Name' | translate}} {{'ERROR.IsRequired' | translate}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+                        <input matInput placeholder="{{'ADMIN.StartDate' | translate}}" formControlName="startDate" type="date">
+                        <mat-error *ngIf="!formGroup.controls['startDate'].valid && formGroup.controls['startDate'].touched">
+                            {{'ADMIN.StartDate' | translate}} {{'ERROR.IsRequired' | translate}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+                        <mat-select (selectionChange)="saveTeacherValue($event.value)">
+                            <mat-option *ngFor="let teacher of teachers" [value]="teacher.id">{{teacher.name}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+                <div class="pad-wrap justify-content-end">
+                    <mat-card-actions class="float-right">
+                        <button mat-raised-button color="warn" type="button"
+                                (click)="onCancel()">{{'BUTTON.Cancel'|translate}}</button>
+                        <button mat-raised-button color="primary" type="submit" class="button"
+                                [disabled]="!formGroup.valid">
+                            {{'BUTTON.Submit' | translate}}
+                        </button>
+                    </mat-card-actions>
+                </div>
+            </form>
+        </div>
+        <div class="gene-card-content" *ngIf="ACTION === 'EDIT'">
+            <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="form">
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+                        <input matInput placeholder="{{'ADMIN.Code' | translate}}" formControlName="code">
+                        <mat-error *ngIf="!formGroup.controls['code'].valid && formGroup.controls['code'].touched">
+                            {{'ADMIN.Code' | translate}} {{'ERROR.IsRequired' | translate}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+                        <input matInput placeholder="{{'ADMIN.Name' | translate}}" formControlName="name">
+                        <mat-error *ngIf="!formGroup.controls['name'].valid && formGroup.controls['name'].touched">
+                            {{'ADMIN.Name' | translate}} {{'ERROR.IsRequired' | translate}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+                        <input matInput placeholder="{{'ADMIN.StartDate' | translate}}" formControlName="startDate" type="date">
+                        <mat-error *ngIf="!formGroup.controls['startDate'].valid && formGroup.controls['startDate'].touched">
+                            {{'ADMIN.StartDate' | translate}} {{'ERROR.IsRequired' | translate}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+                        <input matInput placeholder="{{'ADMIN.Teacher' | translate}}" formControlName="teacherName">
+                    </mat-form-field>
+                </div>
+
+                <div class="pad-wrap justify-content-end">
+                    <mat-card-actions class="float-right">
+                        <button mat-raised-button color="warn" type="button"
+                                (click)="onCancel()">{{'BUTTON.Cancel'|translate}}</button>
+                        <button mat-raised-button color="primary" type="submit" class="button"
+                                [disabled]="!formGroup.valid">
+                            {{'BUTTON.Submit' | translate}}
+                        </button>
+                    </mat-card-actions>
+                </div>
+            </form>
+        </div>
+    </mat-card>
+</div>

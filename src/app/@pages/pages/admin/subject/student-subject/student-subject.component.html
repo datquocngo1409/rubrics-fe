@@ -1,0 +1,76 @@
+<div fxLayout="row wrap" fxLayoutAlign=" start" class="gene-form-wizard">
+    <mat-card fxFlex="100%">
+        <div class="gene-card-title">
+            <div fxLayout="row" fxLayoutAlign="start center">
+                <div fxLayout="column">
+                    <h4 *ngIf="ACTION === 'new'">{{'BUTTON.New'|translate}} {{'ADMIN.GROUP.Group'|translate}}</h4>
+                    <h4 *ngIf="ACTION === 'edit'">{{'BUTTON.Edit'|translate}} {{'ADMIN.GROUP.Group'|translate}}</h4>
+                </div>
+                <span fxFlex></span>
+            </div>
+            <mat-divider></mat-divider>
+        </div>
+        <div class="gene-card-content">
+            <form [formGroup]="detailForm" (ngSubmit)="onSubmit()">
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+                        <mat-form-field class="full-wid mrgn-b-md">
+                            <mat-label>{{'ADMIN.GROUP.Name'|translate}} *</mat-label>
+                            <label>
+                                <input matInput formControlName="name">
+                                <small class="gene-block"
+                                       *ngIf="detailForm.controls['name'].errors && detailForm.controls['name'].touched"
+                                       class="warn-text">
+                                    {{'ADMIN.GROUP.Name'|translate}} {{'ATTENTION.Required' | translate}}
+                                </small>
+                            </label>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row {{isView(ACTION)}}">
+                    <div class="deviceDto">
+                        <div class="choosedDevices">
+                            <h3>{{'ADMIN.GROUP.InGroup' | translate}}</h3>
+                            <div class="containerDevices">
+                                <ul class="responsive-table">
+                                    <li class="table-row {{this.isSelectedChoosed(i)}}"
+                                        *ngFor="let student of choosedStudent; index as i" (click)="selectChoosedDevice(i)">
+                                        <div class="col col-5"><span title="[{{student.id}}] {{student.username}}">[{{student.id}}] {{student.username}}</span></div>
+                                        <div class="col col-5"><span title="{{student.name}}">{{student.name}}</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="buttonMove">
+                            <div class="center">
+                                <span class="material-icons buttonTop" (click)="choosed()">reply</span>
+                                <span class="material-icons buttonBottom" (click)="unchoosed()">reply</span>
+                            </div>
+                        </div>
+                        <div class="unchoosedDevices">
+                            <h3>{{'ADMIN.GROUP.NotInGroup' | translate}}</h3>
+                            <div class="containerDevices">
+                                <ul class="responsive-table">
+                                    <li class="table-row {{this.isSelectedUnchoosed(i)}}"
+                                        *ngFor="let student of unchoosedStudent; index as i"
+                                        (click)="selectUnchoosedDevice(i)">
+                                        <div class="col col-5"><span title="[{{student.id}}] {{student.username}}">[{{student.id}}] {{student.username}}</span></div>
+                                        <div class="col col-5"><span title="{{student.name}}">{{student.name}}</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pad-wrap justify-content-end">
+                    <mat-card-actions class="float-right">
+                        <button mat-raised-button color="warn" type="button"
+                                (click)="onCancel()">{{'BUTTON.Cancel'|translate}}</button>
+                        <button mat-raised-button color="primary" type="submit"
+                                [disabled]="!detailForm.valid">{{'BUTTON.Update'|translate}}</button>
+                    </mat-card-actions>
+                </div>
+            </form>
+        </div>
+    </mat-card>
+</div>

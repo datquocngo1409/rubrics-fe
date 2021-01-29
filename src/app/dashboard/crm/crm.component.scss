@@ -1,0 +1,166 @@
+/*
+COLORS
+light blue: #8e9efc
+medium blue: #5a73fc
+bark blue: #1c3eff
+*/
+@import "abstracts/variable";
+@import "abstracts/mixin";
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "components/buttons";
+@import "layout/header";
+@import "layout/grid-test";
+@import "pages/home";
+@import "base/ultilities";
+@import "components/composition";
+@import "components/box";
+@import "components/card";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.crm-container {
+  margin: -2rem -0.5rem -0.5rem -0.5rem;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777777;
+  padding: 30px;
+}
+
+.header {
+  background-image:
+          linear-gradient(to right bottom, rgba(142, 158, 252, .3), rgba(28, 62, 255, .8)),
+          url('../../../assets/img/header.jpeg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  height: 50vh;
+  clip-path: ellipse(70% 100% at 50% 0%);
+}
+
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.header__logo {
+  height: 120px;
+}
+
+.heading-primary{
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.heading-primary--main{
+  display: block;
+  font-size: 5.2rem;
+  font-weight: 400;
+  letter-spacing: 15px;
+  animation-name: left-to-right;
+  animation-duration: 1.5s;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 18px;
+  animation-name: right-to-left;
+  animation-duration: 1.5s;
+}
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  animation: up 0.5s ease-out 1.5s;
+  animation-fill-mode: backwards;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px #DCDFE6;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 20px black;
+}
+
+.btn--white {
+  color: #777777;
+  background-color: white;
+}
+
+@keyframes falldown {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translate(-200px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translate(200px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

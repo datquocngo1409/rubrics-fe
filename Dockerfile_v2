@@ -1,0 +1,7 @@
+# Stage 2
+FROM node:12-alpine3.10 as build-step
+FROM nginx:1.13.12-alpine
+
+COPY --from=build-step /app/dist/gts-fe /usr/share/nginx/html
+
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
