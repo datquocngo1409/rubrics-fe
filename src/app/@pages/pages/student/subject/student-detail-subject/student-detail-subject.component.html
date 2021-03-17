@@ -1,0 +1,50 @@
+<div class="width-80 float-left">
+    <h3 class="header">{{"SUBJECT.Detail" | translate}}</h3>
+    <div class="subject-name">
+        <h4>[{{subject?.code}}] {{subject?.name}}</h4>
+        <h5>Teacher: {{subject?.teacherName}}</h5>
+        <h5>Start Date: {{subject?.startDate}} [Week {{calculateWeek(subject?.startDate)}}]</h5>
+    </div>
+</div>
+<div class="width-20 float-left">
+    <div class="width-100 margin-top-20">
+        <button mat-raised-button color="primary" class="subject-button"
+                (click)="goStudentList(subject.id)">View Student List</button>
+    </div>
+    <div class="width-100 margin-top-20">
+        <button mat-raised-button color="primary" class="subject-button"
+                (click)="goViewPoint(subject.id)">View Point</button>
+    </div>
+    <div class="width-100 margin-top-20">
+        <button mat-raised-button color="primary" class="subject-button"
+                (click)="goViewRubric(subject.id)">View Rubric</button>
+    </div>
+    <div class="width-100 margin-top-20">
+        <button mat-raised-button color="primary" class="subject-button"
+                (click)="goRate(subject.id)">Rate</button>
+    </div>
+</div>
+<div class="width-100 float-left">
+    <div *ngFor="let wNum of weekNumber">
+        <div class="week" [ngClass]="getWeekColor(wNum, subject?.startDate)">
+            <span class="week-text">{{"SUBJECT.Week" | translate}} {{wNum}}</span>
+        </div>
+        <div class="week-content">
+            <ul>
+                <li class="week-content-text">
+                    Content 1
+                    <input type="checkbox" class="week-content-checkbox">
+                </li>
+                <li class="week-content-text">
+                    Content 2
+                    <input type="checkbox" class="week-content-checkbox">
+                </li>
+                <li class="week-content-text">
+                    Content 3
+                    <input type="checkbox" class="week-content-checkbox">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>

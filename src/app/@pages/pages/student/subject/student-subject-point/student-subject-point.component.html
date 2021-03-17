@@ -7,12 +7,6 @@
         </div>
     </div>
     <div class="width-20 float-left">
-        <div class="width-100">
-            <button mat-raised-button color="accent" style="width: 40%; float: left;"
-                    (click)="addRubrics()">{{'BUTTON.AddRubrics'|translate}}</button>
-            <button mat-raised-button color="primary" style="width: 40%; float: left;"
-                    (click)="updatePoints()">{{'BUTTON.UpdatePoints'|translate}}</button>
-        </div>
         <div class="width-100 margin-top-20">
             <button mat-raised-button color="primary" style="width: 40%; float: left; margin-top: 20px"
                     (click)="pdf.saveAs('invoice.pdf')">{{'BUTTON.ExportPDF'|translate}}</button>
@@ -75,10 +69,6 @@
                     <button mat-icon-button matTooltip="View" class="iconbutton"
                             color="primary" (click)="view(element.id)">
                         <mat-icon>remove_red_eye</mat-icon>
-                    </button>
-                    <button mat-icon-button matTooltip="Update Point" class="iconbutton"
-                            color="primary" (click)="updatePoint(element.id)">
-                        <mat-icon>edit</mat-icon>
                     </button>
                 </td>
             </ng-container>

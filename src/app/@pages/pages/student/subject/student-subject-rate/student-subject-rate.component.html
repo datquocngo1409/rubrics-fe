@@ -1,0 +1,80 @@
+<div class="width-80 float-left">
+    <h3 class="header">{{"SUBJECT.Detail" | translate}}</h3>
+    <div class="subject-name">
+        <h4>[{{subject?.code}}] {{subject?.name}}</h4>
+        <h5>Teacher: {{subject?.teacherName}}</h5>
+        <h5>Start Date: {{subject?.startDate}} [Week {{calculateWeek(subject?.startDate)}}]</h5>
+    </div>
+</div>
+<div class="width-20 float-left">
+    <div class="width-100 margin-top-20">
+        <button mat-raised-button color="primary" class="subject-button"
+                (click)="rate(subject.id)">Take Rating</button>
+    </div>
+</div>
+<div class="width-100 float-left content">
+    <div class="width-20 float-left circle-rating-containner">
+        <div class="circle-rating-child">
+            <circle-progress
+                    [percent]="nowRate?.point"
+                    [radius]="100"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="8"
+                    [outerStrokeColor]="'#2583DC'"
+                    [innerStrokeColor]="'#469EF0'"
+                    [animation]="true"
+                    [animationDuration]="300"
+            ></circle-progress>
+        </div>
+    </div>
+    <div class="width-80 float-left">
+        <div id="chart">
+            <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                    [dataLabels]="chartOptions.dataLabels"
+                    [plotOptions]="chartOptions.plotOptions"
+                    [xaxis]="chartOptions.xaxis"
+            ></apx-chart>
+        </div>
+    </div>
+    <div class="width-100 float-left rating-containner">
+        <mat-card *ngFor="let rating of ratings">
+            <mat-card-header>
+                <mat-card-title>
+                    <div class="width-20 float-left">
+                        <div class="avatar"></div>
+                    </div>
+                    <div class="width-80 float-left">
+                        <b>{{rating.studentName}}</b><br>
+                        <small class="date">2021/03/12 11:17</small>
+                    </div>
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="width-80 float-left" style="margin-top: 10px">
+                    <div class="progress-bar">
+                        <mat-progress-bar mode="determinate" value="{{rating.point}}"></mat-progress-bar>
+                    </div>
+                    <div class="messages">
+                        <div class="messages-content">{{rating.content}}</div>
+                    </div>
+                </div>
+                <div class="width-20 float-left rating-point-containner">
+                    <div class="rating-point">
+                        <circle-progress
+                                [percent]="rating.point"
+                                [radius]="50"
+                                [outerStrokeWidth]="8"
+                                [innerStrokeWidth]="4"
+                                [outerStrokeColor]="'#2583DC'"
+                                [innerStrokeColor]="'#469EF0'"
+                                [animation]="true"
+                                [animationDuration]="300"
+                        ></circle-progress>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

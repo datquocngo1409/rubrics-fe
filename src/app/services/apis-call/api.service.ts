@@ -147,4 +147,16 @@ export class API {
     updatePoints(id: number, value: any) {
         return this.http.patch(environment.apiUrl + `classroom/updatePoints/` + id, value);
     }
+
+    getSubjectRating(id) {
+        return this.http.get(environment.apiUrl + `rating/classroom/` + id);
+    }
+
+    getAllRatingBySubject(id) {
+        return this.http.get(environment.apiUrl + `rating/classroom/` + id + `/getRating`);
+    }
+
+    rate(id: number, value: any) {
+        return this.http.post(environment.apiUrl + `rating/classroom/` + id + `/rate`, value);
+    }
 }

@@ -1,0 +1,60 @@
+.width-100 {
+  width: 100%;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.height-200px {
+  height: 200px;
+}
+
+.float-left {
+  float: left;
+}
+
+.header {
+  border-left: 5px solid #448AFF;
+  margin-left: 10px;
+}
+
+.subject-name {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.example-margin {
+  width: 100%;
+}
+
+.comment {
+  margin-top: 50px;
+}
+
+.input-comment {
+  width: 100%;
+  border: none;
+  /* box-sizing: padding-box; */
+  overflow:hidden;
+  /* demo only: */
+  font-size:14px;
+  display:block;
+  border-radius:10px;
+}

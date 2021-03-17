@@ -1,0 +1,45 @@
+<div class="width-100 float-left">
+    <h3 class="header">{{"SUBJECT.Detail" | translate}}</h3>
+    <div class="subject-name">
+        <h4>[{{subject?.code}}] {{subject?.name}}</h4>
+        <h5>Teacher: {{subject?.teacherName}}</h5>
+        <h5>Start Date: {{subject?.startDate}} [Week {{calculateWeek(subject?.startDate)}}]</h5>
+    </div>
+</div>
+<div class="width-100 float-left">
+    <mat-slider class="example-margin" [(ngModel)]="value"></mat-slider>
+    <div class="width-100 float-left">
+        <div class="width-40 float-left">
+            <circle-progress
+                    [percent]="value"
+                    [radius]="100"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="8"
+                    [outerStrokeColor]="'#2583DC'"
+                    [innerStrokeColor]="'#469EF0'"
+                    [animation]="true"
+                    [animationDuration]="300"
+            ></circle-progress>
+        </div>
+        <div class="width-60 float-left">
+            <mat-card class="comment">
+                    <textarea
+                        #commentTextArea
+                        [(ngModel)]="content"
+                        mat-autosize rows='7'
+                        class="input-comment"
+                        placeholder="Your Comment"></textarea>
+            </mat-card>
+        </div>
+    </div>
+    <div class="pad-wrap justify-content-end">
+        <mat-card-actions class="float-right">
+            <button mat-raised-button color="warn" (click)="cancel()" class="button">
+                {{'BUTTON.Cancel' | translate}}
+            </button>
+            <button mat-raised-button color="primary" (click)="rate(subject.id, value)" class="button">
+                {{'BUTTON.Submit' | translate}}
+            </button>
+        </mat-card-actions>
+    </div>
+</div>

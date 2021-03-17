@@ -24,6 +24,7 @@ export class HorizontalMenuItems {
             type: 'sub',
             class: 'group-title',
             icon: '',
+            tutorial: 'stepHome',
             children: [
                 {state: '', name: 'NAVBAR.Home', type: 'link'},
                 // {state: 'core/account', name: 'NAVBAR.Account', type: 'link'},
@@ -39,6 +40,7 @@ export class HorizontalMenuItems {
                 type: 'sub',
                 class: 'group-title',
                 icon: '',
+                tutorial: 'stepAdmin',
                 children: [
                     {state: 'admin/rubric', name: 'NAVBAR.Rubric', type: 'link'},
                     {
@@ -56,6 +58,7 @@ export class HorizontalMenuItems {
                 type: 'sub',
                 class: 'group-title',
                 icon: '',
+                tutorial: 'stepAdminStatistical',
                 children: [
                     {state: 'admin/statistical/rubric', name: 'NAVBAR.Rubric', type: 'link'},
                     {state: 'admin/statistical/subject', name: 'NAVBAR.Subject', type: 'link'},
@@ -69,6 +72,7 @@ export class HorizontalMenuItems {
                 type: 'sub',
                 class: 'group-title',
                 icon: '',
+                tutorial: 'stepStudentSubject',
                 children: [
                     {state: 'student/subject/list', name: 'NAVBAR.All', type: 'link'},
                     {state: 'student/subject/learning', name: 'NAVBAR.Learing', type: 'link'},
@@ -81,6 +85,7 @@ export class HorizontalMenuItems {
                 type: 'sub',
                 class: 'group-title',
                 icon: '',
+                tutorial: 'stepStudentStatistical',
                 children: [
                     {state: 'student/statistical/your-point', name: 'NAVBAR.YourPoint', type: 'link'},
                     {state: 'student/statistical/subject', name: 'NAVBAR.Subject', type: 'link'},
@@ -94,6 +99,7 @@ export class HorizontalMenuItems {
                 type: 'sub',
                 class: 'group-title',
                 icon: '',
+                tutorial: 'stepTeacherSubject',
                 children: [
                     {state: 'teacher/subject/list', name: 'NAVBAR.All', type: 'link'},
                     {state: 'teacher/subject/teaching', name: 'NAVBAR.Teaching', type: 'link'},
@@ -105,6 +111,7 @@ export class HorizontalMenuItems {
                 type: 'sub',
                 class: 'group-title',
                 icon: '',
+                tutorial: 'stepTeacherStatistical',
                 children: [
                     {state: 'student/statistical/subject', name: 'NAVBAR.YourClass', type: 'link'},
                     {state: 'student/statistical/rubric', name: 'NAVBAR.Rubric', type: 'link'},

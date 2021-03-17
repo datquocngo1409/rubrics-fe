@@ -1,0 +1,120 @@
+.width-100 {
+  width: 100%;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.height-200px {
+  height: 200px;
+}
+
+.float-left {
+  float: left;
+}
+
+.header {
+  border-left: 5px solid #448AFF;
+  margin-left: 10px;
+}
+
+.subject-name {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.subject-button {
+  width: 40%;
+  float: left;
+  margin-top: 20px
+}
+
+.content {
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+.circle-rating-containner {
+  height: 350px;
+  position: relative;
+}
+
+.circle-rating-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rating-containner {
+  border-top: 1px solid #4B4B4B;
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+  background-color: #448AFF;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.student-name-containner {
+  position: relative;
+}
+
+.student-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-bar {
+  margin-left: 1%;
+}
+
+.date {
+  margin-left: 1%;
+}
+
+.rating-point-containner {
+  position: relative;
+}
+
+.rating-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.messages {
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  border-radius: 0 15px 15px 15px;
+  margin-top: 10px;
+  position: relative;
+  width: 80%;
+  margin-left: 5%;
+  min-height: 50px;
+}
+
+.messages-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mat-card {
+  background-color: #eceeef;
+}

@@ -75,9 +75,10 @@
                             </button>
                         </div>
                         <ul class="hr-primary-menu" fxHide.lt-md="true">
-                            <li 
-                                *ngFor="let menuItem of menuItems.getAll(); 
-                                let idx = index" 
+                            <li
+                                *ngFor="let menuItem of menuItems.getAll();
+                                let idx = index"
+                                id="{{menuItem.tutorial}}"
                                 class="child-menu {{menuItem.showColumns}}"
                                 [ngClass]="{'make-mega-menu': menuItem.mega, 'menu-item-has-child':menuItem.children}"
                                 (mouseenter)="onMouseEnter(idx)"
@@ -136,7 +137,7 @@
                                <mat-icon *ngIf="!isFullscreen">fullscreen</mat-icon>
                                <mat-icon *ngIf="isFullscreen">fullscreen_exit</mat-icon>
                             </button> -->
-                            <button class="user-button" mat-button [matMenuTriggerFor]="menu">
+                            <button class="user-button" mat-button [matMenuTriggerFor]="menu" id="user-information">
                                 <div fxLayout="row" fxLayoutAlign="center center">
                                     <mat-icon>account_circle</mat-icon>
                                 </div>
@@ -147,7 +148,7 @@
                             <button mat-icon-button class="overflow-visible" [matMenuTriggerFor]="appsmenu">
                                <mat-icon>apps</mat-icon>
                             </button> -->
-                            <ms-language-drop-down></ms-language-drop-down>
+                            <ms-language-drop-down id="multi-language"></ms-language-drop-down>
                             <!-- <button mat-icon-button class="overflow-visible" (click)="chatMenu()">
                                <mat-icon>chat</mat-icon>
                             </button> -->

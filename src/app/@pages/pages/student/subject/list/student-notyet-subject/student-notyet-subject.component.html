@@ -1,0 +1,40 @@
+<h3 class="header">{{"SUBJECT.SubjectList" | translate}}</h3>
+<div class="left-content">
+    <mat-card *ngFor="let subject of notYet" [ngClass]="getClass(subject)" (click)="viewDetail(subject)">
+        <mat-card-header>
+            <mat-card-title>
+                <b>[{{subject.code}}] {{subject.name}}</b>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <span class="teacher-in-subject">{{"SUBJECT.Teacher" | translate}}: {{subject.teacherName}}</span>
+            <span>{{"SUBJECT.Week" | translate}}: {{(calculateWeek(subject.startDate) > 15 ? 'Finished' : calculateWeek(subject.startDate))}}</span>
+        </mat-card-content>
+    </mat-card>
+</div>
+<div class="right-content">
+    <div class="width-100">
+        <div class="width-50 float-left">
+            <div class="width-50 height-50 learning margin-left-40 border-all"></div>
+        </div>
+        <div class="width-50 height-50 float-left center margin-bottom-20">
+            Learning
+        </div>
+        <div class="width-50 float-left">
+            <div class="width-50 height-50 not-yet-learned margin-left-40 border-all"></div>
+        </div>
+        <div class="width-50 height-50 float-left center margin-bottom-20">
+            Not in
+        </div>
+        <div class="width-50 float-left">
+            <div class="width-50 height-50 learned margin-left-40 border-all"></div>
+        </div>
+        <div class="width-50 height-50 float-left center margin-bottom-20">
+            Learned
+        </div>
+    </div>
+    <div class="calendar-wrapper">
+        <mat-calendar #calendar [(selected)]="selectedDate">
+        </mat-calendar>
+    </div>
+</div>

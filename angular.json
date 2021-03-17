@@ -53,6 +53,7 @@
               "node_modules/slick-carousel/slick/slick-theme.scss",
               "node_modules/ngx-bar-rating/themes/br-default-theme.css",
               "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/intro.js/introjs.css",
               {
                 "input": "node_modules/@progress/kendo-theme-material/dist/all.css"
               }
@@ -65,7 +66,9 @@
               "node_modules/chart.js/dist/Chart.bundle.min.js",
               "node_modules/easy-pie-chart/dist/easypiechart.js",
               "node_modules/bootstrap/dist/js/bootstrap.js",
-              "node_modules/jspdf-autotable/dist/jspdf.plugin.autotable.js"
+              "node_modules/jspdf-autotable/dist/jspdf.plugin.autotable.js",
+              "node_modules/intro.js/intro.js",
+              "node_modules/apexcharts/dist/apexcharts.min.js"
             ]
           },
           "configurations": {
