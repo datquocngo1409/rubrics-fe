@@ -152,6 +152,10 @@ export class API {
         return this.http.get(environment.apiUrl + `rating/classroom/` + id);
     }
 
+    getAllRating() {
+        return this.http.get(environment.apiUrl + `rating/classroom`);
+    }
+
     getAllRatingBySubject(id) {
         return this.http.get(environment.apiUrl + `rating/classroom/` + id + `/getRating`);
     }

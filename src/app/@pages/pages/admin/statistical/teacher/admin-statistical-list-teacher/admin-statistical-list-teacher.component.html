@@ -1,0 +1,16 @@
+<h3 class="header">Statistical Teacher</h3>
+<div class="left-content">
+    <mat-card *ngFor="let teacher of teachers" (click)="viewDetail(teacher.id)">
+        <mat-card-header>
+            <mat-card-title>
+                <b>{{teacher.name}}</b>
+            </mat-card-title>
+        </mat-card-header>
+    </mat-card>
+</div>
+<div class="right-content">
+    <div class="calendar-wrapper">
+        <mat-calendar #calendar [(selected)]="selectedDate">
+        </mat-calendar>
+    </div>
+</div>

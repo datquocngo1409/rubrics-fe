@@ -1,0 +1,65 @@
+<div class="width-100 float-left">
+    <div class="width-80 float-left">
+        <h3 class="header">Statistical Teacher</h3>
+        <div class="teacher-name">
+            <h4>Teacher: {{teacher?.name}}</h4>
+        </div>
+    </div>
+    <div class="width-20 float-left"></div>
+</div>
+<div class="width-100 float-left margin-top-20">
+    <div class="width-48 float-left" style="margin-right: 4%">
+        <div id="chart1">
+            <div class="chart-header">
+                Number of students
+            </div>
+            <apx-chart
+                    [series]="chart1Data.series"
+                    [chart]="chart1Data.chart"
+                    [dataLabels]="chart1Data.dataLabels"
+                    [xaxis]="chart1Data.xaxis"
+            ></apx-chart>
+        </div>
+    </div>
+    <div class="width-48 float-left">
+        <div id="chart2">
+            <div class="chart-header">
+                Start/End time of Subjects
+            </div>
+            <apx-chart
+                    [series]="chart2Data.series"
+                    [chart]="chart2Data.chart"
+                    [plotOptions]="chart2Data.plotOptions"
+                    [xaxis]="chart2Data.xaxis"
+            ></apx-chart>
+        </div>
+    </div>
+    <div class="width-100 float-left">
+        <div class="width-48 float-left"  style="margin-right: 4%">
+            <div class="chart-header">
+                Subject ratings
+            </div>
+            <apx-chart
+                    [series]="chart3Data.series"
+                    [chart]="chart3Data.chart"
+                    [fill]="chart3Data.fill"
+                    [labels]="chart3Data.label"
+                    [stroke]="chart3Data.stroke"
+                    [responsive]="chart3Data.responsive"
+            ></apx-chart>
+        </div>
+        <div class="width-48 float-left">
+            <div class="chart-header">
+                Subject Rating Count
+            </div>
+            <div id="chart4">
+                <apx-chart
+                        [series]="chart4Data.series"
+                        [chart]="chart4Data.chart"
+                        [dataLabels]="chart4Data.dataLabels"
+                        [xaxis]="chart4Data.xaxis"
+                ></apx-chart>
+            </div>
+        </div>
+    </div>
+</div>

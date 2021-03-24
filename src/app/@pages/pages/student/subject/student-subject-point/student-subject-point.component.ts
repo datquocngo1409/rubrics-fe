@@ -2,7 +2,7 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {API} from '../../../../../services/apis-call/api.service';
 import {MatDialog} from '@angular/material/dialog';
-import {TeacherPointDialogComponent} from '../../../teacher/dialog/teacher-point-dialog/teacher-point-dialog.component';
+import {TeacherPointDialogComponent} from '../../../teacher/point/dialog/teacher-point-dialog/teacher-point-dialog.component';
 
 @Component({
   selector: 'gts-fe-student-subject-point',

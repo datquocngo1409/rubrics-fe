@@ -1,0 +1,39 @@
+<div class="width-100 float-left">
+    <div class="width-100 float-left">
+        <h3 class="header">Subject Point</h3>
+        <div class="subject-name">
+            <h4>[{{subject?.code}}] {{subject?.name}}</h4>
+            <h5>Teacher: {{subject?.teacherName}}</h5>
+            <h4>{{subjectRubricImportant?.rubricName}}</h4>
+        </div>
+    </div>
+</div>
+<div class="width-100 float-left margin-top-20">
+    <div class="point-container">
+        <ul class="responsive-table">
+            <li class="table-row" *ngFor="let pointData of pointDatas; index as i">
+                <div class="col col-6 row justify-content-center align-self-center">
+                    <span title="{{pointData.studentName}}">
+                        {{pointData.studentName}}
+                    </span>
+                </div>
+                <div class="col col-6 row justify-content-center align-self-center">
+                    <mat-select [(value)]="pointData.point" title="{{getText(pointData.point)}}">
+                        <mat-option *ngFor="let ps of pointSelelct" [value]="ps" title="{{getText(ps)}}">
+                            {{getText(ps)}}
+                        </mat-option>
+                    </mat-select>
+                </div>
+            </li>
+        </ul>
+        <div class="pad-wrap justify-content-end">
+            <mat-card-actions class="float-right">
+                <button mat-raised-button color="warn" type="button"
+                        (click)="onCancel()">Cancel</button>
+                <button mat-raised-button color="primary" type="submit" class="button" (click)="onSubmit()">
+                    Update
+                </button>
+            </mat-card-actions>
+        </div>
+    </div>
+</div>

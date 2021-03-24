@@ -60,10 +60,8 @@ export class HorizontalMenuItems {
                 icon: '',
                 tutorial: 'stepAdminStatistical',
                 children: [
-                    {state: 'admin/statistical/rubric', name: 'NAVBAR.Rubric', type: 'link'},
                     {state: 'admin/statistical/subject', name: 'NAVBAR.Subject', type: 'link'},
                     {state: 'admin/statistical/teacher', name: 'NAVBAR.Teacher', type: 'link'},
-                    {state: 'admin/statistical/student', name: 'NAVBAR.Student', type: 'link'}
                 ]
             });
         } else if (localStorage.getItem('role') === 'STUDENT') {
@@ -113,8 +111,8 @@ export class HorizontalMenuItems {
                 icon: '',
                 tutorial: 'stepTeacherStatistical',
                 children: [
-                    {state: 'student/statistical/subject', name: 'NAVBAR.YourClass', type: 'link'},
-                    {state: 'student/statistical/rubric', name: 'NAVBAR.Rubric', type: 'link'},
+                    {state: 'teacher/statistical/subject', name: 'NAVBAR.YourClass', type: 'link'},
+                    {state: 'teacher/statistical/teacher', name: 'NAVBAR.YourStatistical', type: 'link'},
                 ]
             });
         }
