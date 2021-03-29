@@ -22,60 +22,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc71ca5-1c23-4a55-a4f9-aeb13ac0defb" name="Default Changelist" comment="fix name">
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/student-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/student.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-all-subject/student-all-subject.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-all-subject/student-all-subject.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-all-subject/student-all-subject.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-all-subject/student-all-subject.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-learning-subject/student-learning-subject.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-learning-subject/student-learning-subject.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-learning-subject/student-learning-subject.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-learning-subject/student-learning-subject.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-notyet-subject/student-notyet-subject.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-notyet-subject/student-notyet-subject.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-notyet-subject/student-notyet-subject.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-notyet-subject/student-notyet-subject.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-studied-subject/student-studied-subject.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-studied-subject/student-studied-subject.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-studied-subject/student-studied-subject.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list/student-studied-subject/student-studied-subject.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/rating-dialog/rating-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/rating-dialog/rating-dialog.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/rating-dialog/rating-dialog.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/rating-dialog/rating-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-detail-subject/student-detail-subject.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-detail-subject/student-detail-subject.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-detail-subject/student-detail-subject.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-detail-subject/student-detail-subject.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rubric/student-subject-rubric.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rubric/student-subject-rubric.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rubric/student-subject-rubric.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rubric/student-subject-rubric.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-students/student-subject-students.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-students/student-subject-students.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-students/student-subject-students.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-students/student-subject-students.component.ts" afterDir="false" />
+    <list default="true" id="0bc71ca5-1c23-4a55-a4f9-aeb13ac0defb" name="Default Changelist" comment="ađd">
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-list/student-statistical-subject-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-list/student-statistical-subject-list.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-list/student-statistical-subject-list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-list/student-statistical-subject-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/teacher/teacher-point-subject/teacher-point-subject.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/teacher/teacher-point-subject/teacher-point-subject.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/student-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/student-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/student.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/student.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/teacher/list/teacher-request-rubric/teacher-request-rubric.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/teacher/list/teacher-request-rubric/teacher-request-rubric.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/teacher/statistical/teacher-statistical-detail-subject/teacher-statistical-detail-subject.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/teacher/statistical/teacher-statistical-detail-subject/teacher-statistical-detail-subject.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/core/menu/horizontal-menu-items/horizontal-menu-items.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/menu/horizontal-menu-items/horizontal-menu-items.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/dashboard/crm/crm.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/crm/crm.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/crm/crm.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/crm/crm.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/main-material.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/main-material.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/apis-call/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/apis-call/api.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/http-interceptor/http-interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/http-interceptor/http-interceptor.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +94,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Persional/Java/One-to-One-WebSockets-Chat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/img/bitnemo" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -133,19 +104,33 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/img/bitnemo" />
       <recent name="$PROJECT_DIR$/src/assets/img" />
       <recent name="$PROJECT_DIR$/src/assets/img/women" />
       <recent name="$PROJECT_DIR$/src/app/services" />
-      <recent name="$PROJECT_DIR$/src/assets/img/bitnemo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/@pages/pages/admin/statistical/subject" />
+      <recent name="$PROJECT_DIR$/src/app/@pages/pages/teacher/list" />
+      <recent name="$PROJECT_DIR$/src/app/@pages/pages/teacher/point" />
+      <recent name="$PROJECT_DIR$/src/app/@pages/pages/teacher/add-point" />
       <recent name="$PROJECT_DIR$/src/app/@pages/pages/student/subject/list" />
-      <recent name="$PROJECT_DIR$/src/app/@pages/pages/admin/request" />
-      <recent name="$PROJECT_DIR$/src/app/@pages/pages" />
-      <recent name="$PROJECT_DIR$/src/app/@pages/pages/subject" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="E2E Tests (angular-e2e)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -315,6 +300,30 @@
       <workItem from="1615857494775" duration="2350000" />
       <workItem from="1615881353108" duration="647000" />
       <workItem from="1615943160751" duration="354000" />
+      <workItem from="1615949167898" duration="361000" />
+      <workItem from="1615952536810" duration="21000" />
+      <workItem from="1615966239548" duration="485000" />
+      <workItem from="1615967219637" duration="6469000" />
+      <workItem from="1616030679218" duration="3125000" />
+      <workItem from="1616051796166" duration="42000" />
+      <workItem from="1616053948353" duration="346000" />
+      <workItem from="1616055424815" duration="6524000" />
+      <workItem from="1616115584423" duration="6760000" />
+      <workItem from="1616124651127" duration="3088000" />
+      <workItem from="1616136380443" duration="11257000" />
+      <workItem from="1616202631684" duration="10360000" />
+      <workItem from="1616223519832" duration="8121000" />
+      <workItem from="1616381973154" duration="10000" />
+      <workItem from="1616483574593" duration="602000" />
+      <workItem from="1616560027249" duration="466000" />
+      <workItem from="1616574399175" duration="19000" />
+      <workItem from="1616644952731" duration="644000" />
+      <workItem from="1616657627483" duration="1348000" />
+      <workItem from="1616722325080" duration="2173000" />
+      <workItem from="1616728572068" duration="8000" />
+      <workItem from="1616982253472" duration="569000" />
+      <workItem from="1616984140335" duration="7379000" />
+      <workItem from="1617000401396" duration="4156000" />
     </task>
     <task id="LOCAL-00001" summary="add login and menu">
       <created>1604133995984</created>
@@ -519,7 +528,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608261250224</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="ađd">
+      <created>1615949361424</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1615949361424</updated>
+    </task>
+    <task id="LOCAL-00031" summary="ađd">
+      <created>1616560268717</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1616560268717</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,6 +584,7 @@
     <MESSAGE value="fix some error" />
     <MESSAGE value="update name and logo" />
     <MESSAGE value="fix name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix name" />
+    <MESSAGE value="ađd" />
+    <option name="LAST_COMMIT_MESSAGE" value="ađd" />
   </component>
 </project>

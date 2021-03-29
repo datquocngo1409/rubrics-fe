@@ -9,6 +9,9 @@ import {StudentSubjectStudentsComponent} from './subject/student-subject-student
 import {StudentSubjectPointComponent} from './subject/student-subject-point/student-subject-point.component';
 import {StudentSubjectRubricComponent} from './subject/student-subject-rubric/student-subject-rubric.component';
 import {StudentSubjectRateComponent} from './subject/student-subject-rate/student-subject-rate.component';
+import {YourPointComponent} from './statistical/your-point/your-point.component';
+import {StudentStatisticalSubjectListComponent} from './statistical/student-statistical-subject-list/student-statistical-subject-list.component';
+import {StudentStatisticalSubjectDetailComponent} from './statistical/student-statistical-subject-detail/student-statistical-subject-detail.component';
 
 const routes: Routes = [
   {
@@ -46,6 +49,18 @@ const routes: Routes = [
   {
     path: 'subject/rate/:id',
     component: StudentSubjectRateComponent
+  },
+  {
+    path: 'statistical/your-point',
+    component: YourPointComponent
+  },
+  {
+    path: 'statistical/subject',
+    component: StudentStatisticalSubjectListComponent
+  },
+  {
+    path: 'statistical/subject/:id',
+    component: StudentStatisticalSubjectDetailComponent
   }
 ];
 

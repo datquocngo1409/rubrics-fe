@@ -37,22 +37,11 @@
 
             <ng-container *ngFor="let rubric of rubrics; index as i" matColumnDef="rubric{{i}}">
                 <th mat-header-cell *matHeaderCellDef>{{rubricNames[i]}}</th>
-                <td mat-cell *matCellDef="let element">{{element.points[i].point}}</td>
-            </ng-container>
-
-            <ng-container matColumnDef="totalPoint">
-                <th mat-header-cell *matHeaderCellDef>Total Point</th>
-                <td mat-cell *matCellDef="let element">{{element.totalPoint}}</td>
-            </ng-container>
-
-            <ng-container matColumnDef="gpaPoint">
-                <th mat-header-cell *matHeaderCellDef>GPA</th>
-                <td mat-cell *matCellDef="let element">{{element.gpaPoint}}</td>
-            </ng-container>
-
-            <ng-container matColumnDef="totalPointString">
-                <th mat-header-cell *matHeaderCellDef>String Point</th>
-                <td mat-cell *matCellDef="let element">{{element.totalPointString}}</td>
+                <td mat-cell *matCellDef="let element" title="{{getPointTextTitle(element.points[i]?.point)}}">
+                    <span class="{{getPointClass(element.points[i]?.point)}}">
+                        <b>{{getPointText(element.points[i]?.point)}}</b>
+                    </span>
+                </td>
             </ng-container>
 
             <ng-container matColumnDef="passed">

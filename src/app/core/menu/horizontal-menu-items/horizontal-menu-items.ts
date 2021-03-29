@@ -87,8 +87,6 @@ export class HorizontalMenuItems {
                 children: [
                     {state: 'student/statistical/your-point', name: 'NAVBAR.YourPoint', type: 'link'},
                     {state: 'student/statistical/subject', name: 'NAVBAR.Subject', type: 'link'},
-                    {state: 'student/statistical/rubric', name: 'NAVBAR.Rubric', type: 'link'},
-                    {state: 'student/statistical/teacher', name: 'NAVBAR.Teacher', type: 'link'},
                 ]
             });
         } else if (localStorage.getItem('role') === 'TEACHER') {

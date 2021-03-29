@@ -29,10 +29,14 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { RatingDialogComponent } from './subject/rating-dialog/rating-dialog.component';
 import {MatSliderModule} from '@angular/material/slider';
 import {FormsModule} from '@angular/forms';
+import { YourPointComponent } from './statistical/your-point/your-point.component';
+import { StudentStatisticalSubjectListComponent } from './statistical/student-statistical-subject-list/student-statistical-subject-list.component';
+import { StudentStatisticalSubjectDetailComponent } from './statistical/student-statistical-subject-detail/student-statistical-subject-detail.component';
+import {ChartModule} from '@progress/kendo-angular-charts';
 
 
 @NgModule({
-  declarations: [StudentAllSubjectComponent, StudentLearningSubjectComponent, StudentStudiedSubjectComponent, StudentNotyetSubjectComponent, StudentDetailSubjectComponent, StudentSubjectStudentsComponent, StudentSubjectPointComponent, StudentSubjectRubricComponent, StudentSubjectRateComponent, RatingDialogComponent],
+  declarations: [StudentAllSubjectComponent, StudentLearningSubjectComponent, StudentStudiedSubjectComponent, StudentNotyetSubjectComponent, StudentDetailSubjectComponent, StudentSubjectStudentsComponent, StudentSubjectPointComponent, StudentSubjectRubricComponent, StudentSubjectRateComponent, RatingDialogComponent, YourPointComponent, StudentStatisticalSubjectListComponent, StudentStatisticalSubjectDetailComponent],
     imports: [
         CommonModule,
         StudentRoutingModule,
@@ -52,7 +56,8 @@ import {FormsModule} from '@angular/forms';
         NgCircleProgressModule,
         MatProgressBarModule,
         MatSliderModule,
-        FormsModule
+        FormsModule,
+        ChartModule
     ]
 })
 export class StudentModule { }

@@ -163,4 +163,8 @@ export class API {
     rate(id: number, value: any) {
         return this.http.post(environment.apiUrl + `rating/classroom/` + id + `/rate`, value);
     }
+
+    getAllTranscripData() {
+        return this.http.get(environment.apiUrl + `transcript-data`);
+    }
 }

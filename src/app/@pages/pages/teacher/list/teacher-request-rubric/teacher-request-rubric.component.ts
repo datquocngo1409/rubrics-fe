@@ -27,7 +27,6 @@ export class TeacherRequestRubricComponent implements OnInit {
 
     ngOnInit(): void {
         this.user = JSON.parse(localStorage.getItem('userProfile'));
-        console.log(this.user);
         this.id = this.route.snapshot.paramMap.get('id');
         this.ACTION = 'NEW';
         this.formGroup = this.formBuilder.group({

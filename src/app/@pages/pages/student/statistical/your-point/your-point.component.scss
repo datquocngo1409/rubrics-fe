@@ -4,15 +4,11 @@
 }
 
 .k-widget {
-  font-family: "DejaVu Sans", "Arial", sans-serif;
-}
-
-.k-grid {
-  font-family: "DejaVu Sans", "Arial", sans-serif;
+  font-family: 'Arial Unicode MS', serif;
 }
 
 kendo-pdf-export {
-  font-family: "DejaVu Sans", "Arial", sans-serif;
+  font-family: "DejaVu Sans", "Arial Unicode MS", sans-serif;
   font-size: 12px;
 }
 
@@ -28,6 +24,18 @@ kendo-pdf-export {
   width: 80%;
 }
 
+.width-50 {
+  width: 50%;
+}
+
+.width-48 {
+  width: 48%;
+}
+
+.width-45 {
+  width: 45%;
+}
+
 .width-20 {
   width: 20%;
 }
@@ -36,14 +44,26 @@ kendo-pdf-export {
   margin-top: 20px;
 }
 
-.subject-name {
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.teacher-name {
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.chart-header {
+  font-size: 26px;
+  justify-content: center;
+  text-align: center;
+  background-color: #d9edf7;
 }
 
 .mat-cell{
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-left: 2px solid rgba(0, 0, 0, 0.3);
@@ -53,6 +73,7 @@ kendo-pdf-export {
 .mat-header-cell{
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-left: 2px solid rgba(0, 0, 0, 0.3);

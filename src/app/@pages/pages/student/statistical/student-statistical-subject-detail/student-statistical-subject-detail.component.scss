@@ -4,15 +4,11 @@
 }
 
 .k-widget {
-  font-family: "DejaVu Sans", "Arial", sans-serif;
-}
-
-.k-grid {
-  font-family: "DejaVu Sans", "Arial", sans-serif;
+  font-family: 'Arial Unicode MS', serif;
 }
 
 kendo-pdf-export {
-  font-family: "DejaVu Sans", "Arial", sans-serif;
+  font-family: "DejaVu Sans", "Arial Unicode MS", sans-serif;
   font-size: 12px;
 }
 
@@ -26,6 +22,18 @@ kendo-pdf-export {
 
 .width-80 {
   width: 80%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-48 {
+  width: 48%;
+}
+
+.width-45 {
+  width: 45%;
 }
 
 .width-20 {
@@ -64,77 +72,77 @@ kendo-pdf-export {
 }
 
 .mat-column-rubric0 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric1 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric2 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric3 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric4 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric5 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric6 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric7 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric8 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric9 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric10 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric11 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric12 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric13 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
 .mat-column-rubric14 {
-  width: 7% !important;
+  width: 8% !important;
   text-align: center;
 }
 
@@ -188,4 +196,48 @@ kendo-pdf-export {
 
 .pointAPlus {
   color: green;
+}
+
+p {
+  font-family: Lato;
+}
+
+.header-li {
+  background-color: #CFD0D3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color:black;
+}
+
+.subheader {
+  //background-color: #f3c062;
+  margin-left: 20px;
+}
+
+.header-li p {
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.submenu-content {
+  display: flex;
+  cursor: pointer;
+}
+
+.chart-header {
+  font-size: 26px;
+  justify-content: center;
+  text-align: center;
+  background-color: #d9edf7;
+}
+
+.chart-4-container {
+  position: relative;
+}
+
+.chart-4-child {
+  position: absolute;
+  top: 150%;
+  left: 25%;
 }

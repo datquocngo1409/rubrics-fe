@@ -27,7 +27,6 @@ export class HttpInterceptorService implements HttpInterceptor {
                             if (err.status !== 401) {
                                 return;
                             }
-                            console.log('session timeout');
                             localStorage.removeItem('authenticatedUser');
                             localStorage.removeItem('language');
                             localStorage.removeItem('token');
