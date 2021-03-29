@@ -28,8 +28,6 @@ import { StudentSubjectComponent } from './subject/student-subject/student-subje
 import { RubricSubjectComponent } from './subject/rubric-subject/rubric-subject.component';
 import { RequestRubricComponent } from './request/request-rubric/request-rubric.component';
 import { DetailRequestRubricComponent } from './request/detail-request-rubric/detail-request-rubric.component';
-import { AdminStatisticalListSubjectComponent } from './statistical/subject/admin-statistical-list-subject/admin-statistical-list-subject.component';
-import { AdminStatisticalDetailSubjectComponent } from './statistical/subject/admin-statistical-detail-subject/admin-statistical-detail-subject.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {ChartModule} from '@progress/kendo-angular-charts';
 import {NgApexchartsModule} from 'ng-apexcharts';
@@ -39,7 +37,23 @@ import { AdminStatisticalRubricComponent } from './statistical/rubric/admin-stat
 
 
 @NgModule({
-  declarations: [ListStudentComponent, DetailStudentComponent, ListTeacherComponent, DetailTeacherComponent, ListRubricComponent, DetailRubricComponent, ListSubjectComponent, DetailSubjectComponent, StudentSubjectComponent, RubricSubjectComponent, RequestRubricComponent, DetailRequestRubricComponent, AdminStatisticalListSubjectComponent, AdminStatisticalDetailSubjectComponent, AdminStatisticalListTeacherComponent, AdminStatisticalDetailTeacherComponent, AdminStatisticalRubricComponent],
+  declarations: [
+      ListStudentComponent,
+      DetailStudentComponent,
+      ListTeacherComponent,
+      DetailTeacherComponent,
+      ListRubricComponent,
+      DetailRubricComponent,
+      ListSubjectComponent,
+      DetailSubjectComponent,
+      StudentSubjectComponent,
+      RubricSubjectComponent,
+      RequestRubricComponent,
+      DetailRequestRubricComponent,
+      AdminStatisticalListTeacherComponent,
+      AdminStatisticalDetailTeacherComponent,
+      AdminStatisticalRubricComponent
+  ],
     imports: [
         CommonModule,
         AdminRoutingModule,
