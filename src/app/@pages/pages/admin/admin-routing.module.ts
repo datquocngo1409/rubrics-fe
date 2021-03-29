@@ -12,13 +12,11 @@ import {StudentSubjectComponent} from './subject/student-subject/student-subject
 import {RubricSubjectComponent} from './subject/rubric-subject/rubric-subject.component';
 import {RequestRubricComponent} from './request/request-rubric/request-rubric.component';
 import {DetailRequestRubricComponent} from './request/detail-request-rubric/detail-request-rubric.component';
-import {TeacherStatisticalListSubjectComponent} from '../teacher/statistical/teacher-statistical-list-subject/teacher-statistical-list-subject.component';
-import {TeacherStatisticalDetailSubjectComponent} from '../teacher/statistical/teacher-statistical-detail-subject/teacher-statistical-detail-subject.component';
-import {AdminStatisticalListSubjectComponent} from './statistical/subject/admin-statistical-list-subject/admin-statistical-list-subject.component';
-import {AdminStatisticalDetailSubjectComponent} from './statistical/subject/admin-statistical-detail-subject/admin-statistical-detail-subject.component';
 import {AdminStatisticalListTeacherComponent} from './statistical/teacher/admin-statistical-list-teacher/admin-statistical-list-teacher.component';
 import {AdminStatisticalDetailTeacherComponent} from './statistical/teacher/admin-statistical-detail-teacher/admin-statistical-detail-teacher.component';
 import {AdminStatisticalRubricComponent} from './statistical/rubric/admin-statistical-rubric/admin-statistical-rubric.component';
+import {AdminStatisticalListSubjectComponent} from './statistical/subject/admin-statistical-list-subject/admin-statistical-list-subject.component';
+import {AdminStatisticalDetailSubjectComponent} from './statistical/subject/admin-statistical-detail-subject/admin-statistical-detail-subject.component';
 
 const routes: Routes = [
   {
