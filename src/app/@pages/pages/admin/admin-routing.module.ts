@@ -15,8 +15,6 @@ import {DetailRequestRubricComponent} from './request/detail-request-rubric/deta
 import {AdminStatisticalListTeacherComponent} from './statistical/teacher/admin-statistical-list-teacher/admin-statistical-list-teacher.component';
 import {AdminStatisticalDetailTeacherComponent} from './statistical/teacher/admin-statistical-detail-teacher/admin-statistical-detail-teacher.component';
 import {AdminStatisticalRubricComponent} from './statistical/rubric/admin-statistical-rubric/admin-statistical-rubric.component';
-import {AdminStatisticalListSubjectComponent} from './statistical/subject/admin-statistical-list-subject/admin-statistical-list-subject.component';
-import {AdminStatisticalDetailSubjectComponent} from './statistical/subject/admin-statistical-detail-subject/admin-statistical-detail-subject.component';
 
 const routes: Routes = [
   {
@@ -67,14 +65,14 @@ const routes: Routes = [
     path: 'subject/:id',
     component: DetailSubjectComponent
   },
-  {
-    path: 'statistical/subject',
-    component: AdminStatisticalListSubjectComponent
-  },
-  {
-    path: 'statistical/subject/:id',
-    component: AdminStatisticalDetailSubjectComponent
-  },
+  // {
+  //   path: 'statistical/subject',
+  //   component: AdminStatisticalListSubjectComponent
+  // },
+  // {
+  //   path: 'statistical/subject/:id',
+  //   component: AdminStatisticalDetailSubjectComponent
+  // },
   {
     path: 'statistical/teacher',
     component: AdminStatisticalListTeacherComponent
