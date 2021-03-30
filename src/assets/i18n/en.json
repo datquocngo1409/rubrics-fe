@@ -237,7 +237,11 @@
     "Submit": "Submit",
     "Comment": "Comment",
     "Update": "Update",
-    "New": "New"
+    "New": "New",
+    "AddRubrics": "Add Rubrics",
+    "UpdatePoints": "Update Points",
+    "ExportPDF": "Export PDF",
+    "ExportExcel": "Export Excel"
   },
   "Top Products": "Top Products",
   "Menus (dropdowns)": "Menus (dropdowns)",

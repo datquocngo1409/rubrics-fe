@@ -22,31 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc71ca5-1c23-4a55-a4f9-aeb13ac0defb" name="Default Changelist" comment="ađd">
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-list/student-statistical-subject-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-list/student-statistical-subject-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-list/student-statistical-subject-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-list/student-statistical-subject-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.ts" afterDir="false" />
+    <list default="true" id="0bc71ca5-1c23-4a55-a4f9-aeb13ac0defb" name="Default Changelist" comment="fix i18n">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/student-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/student-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/student.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/student.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-point/student-subject-point.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/teacher/list/teacher-request-rubric/teacher-request-rubric.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/teacher/list/teacher-request-rubric/teacher-request-rubric.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/teacher/statistical/teacher-statistical-detail-subject/teacher-statistical-detail-subject.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/teacher/statistical/teacher-statistical-detail-subject/teacher-statistical-detail-subject.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/core/menu/horizontal-menu-items/horizontal-menu-items.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/menu/horizontal-menu-items/horizontal-menu-items.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/crm/crm.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/crm/crm.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/apis-call/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/apis-call/api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/http-interceptor/http-interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/http-interceptor/http-interceptor.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/i18n/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/i18n/en.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="e999e78426ad0ccdb05ddab5741b5edc45f82602" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -118,19 +96,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="E2E Tests (angular-e2e)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -323,7 +288,9 @@
       <workItem from="1616728572068" duration="8000" />
       <workItem from="1616982253472" duration="569000" />
       <workItem from="1616984140335" duration="7379000" />
-      <workItem from="1617000401396" duration="4156000" />
+      <workItem from="1617000401396" duration="7870000" />
+      <workItem from="1617067311187" duration="11229000" />
+      <workItem from="1617087101169" duration="742000" />
     </task>
     <task id="LOCAL-00001" summary="add login and menu">
       <created>1604133995984</created>
@@ -542,7 +509,56 @@
       <option name="project" value="LOCAL" />
       <updated>1616560268717</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="ađd">
+      <created>1617007156442</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1617007156442</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix deploy">
+      <created>1617008524685</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1617008524685</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fix deploy">
+      <created>1617009581513</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1617009581513</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fix deploy">
+      <created>1617010140803</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1617010140803</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix deploy">
+      <created>1617069429873</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1617069429873</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix deploy">
+      <created>1617069787644</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1617069787644</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fix i18n">
+      <created>1617080030336</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1617080030336</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,6 +601,8 @@
     <MESSAGE value="update name and logo" />
     <MESSAGE value="fix name" />
     <MESSAGE value="ađd" />
-    <option name="LAST_COMMIT_MESSAGE" value="ađd" />
+    <MESSAGE value="fix deploy" />
+    <MESSAGE value="fix i18n" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix i18n" />
   </component>
 </project>
