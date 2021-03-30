@@ -1,0 +1,80 @@
+<div class="width-100 float-left">
+    <div class="width-80 float-left">
+        <h3 class="header">{{"SUBJECT.SubjectPoint" | translate}}</h3>
+        <div class="subject-name">
+            <h4>[{{subject?.code}}] {{subject?.name}}</h4>
+            <h5>Teacher: {{subject?.teacherName}}</h5>
+        </div>
+    </div>
+    <div class="width-20 float-left"></div>
+</div>
+<div class="width-100 float-left margin-top-20">
+    <div class="width-48 float-left" style="margin-right: 4%">
+        <div id="chart1">
+            <div class="chart-header">
+                Average score By Students
+            </div>
+            <apx-chart id="chartStudent"
+                       [series]="chart1Data.series"
+                       [chart]="chart1Data.chart"
+                       [dataLabels]="chart1Data.dataLabels"
+                       [plotOptions]="chart1Data.plotOptions"
+                       [xaxis]="chart1Data.xaxis"
+            ></apx-chart>
+        </div>
+    </div>
+    <div class="width-48 float-left">
+        <div id="chart2">
+            <div class="chart-header">
+                Average score By Rubrics
+            </div>
+            <apx-chart
+                    [series]="chart2Data.series"
+                    [chart]="chart2Data.chart"
+                    [dataLabels]="chart2Data.dataLabels"
+                    [plotOptions]="chart2Data.plotOptions"
+                    [xaxis]="chart2Data.xaxis"
+            ></apx-chart>
+        </div>
+    </div>
+    <div class="width-100 float-left">
+        <div class="width-48 float-left"  style="margin-right: 4%">
+            <kendo-chart [title]="{ text: 'Student Min-Max Point' }">
+                <kendo-chart-series>
+                    <kendo-chart-series-item type="rangeColumn"
+                                             [data]="chart3Data" fromField="min" toField="max" categoryField="month">
+                        <kendo-chart-series-item-labels-from [content]="labelContentFrom">
+                        </kendo-chart-series-item-labels-from>
+                        <kendo-chart-series-item-labels-to [content]="labelContentTo">
+                        </kendo-chart-series-item-labels-to>
+                    </kendo-chart-series-item>
+                </kendo-chart-series>
+                <kendo-chart-category-axis>
+                    <kendo-chart-category-axis-item [labels]="{ rotation: 'auto' }">
+                    </kendo-chart-category-axis-item>
+                </kendo-chart-category-axis>
+                <kendo-chart-tooltip>
+                    <ng-template kendoChartSeriesTooltipTemplate let-value="value">
+                        Max Score : {{ getPointText(value.to *2) }} <br>
+                        Min Score : {{ getPointText(value.from * 2) }}
+                    </ng-template>
+                </kendo-chart-tooltip>
+            </kendo-chart>
+        </div>
+        <div class="width-48 float-left">
+            <div class="chart-4-container">
+                <div class="chart-header">
+                    Number of students passing
+                </div>
+                <div id="chart4" class="chart-4-child">
+                    <apx-chart
+                            [series]="chart4Data.series"
+                            [chart]="chart4Data.chart"
+                            [labels]="chart4Data.labels"
+                            [responsive]="chart4Data.responsive"
+                    ></apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
