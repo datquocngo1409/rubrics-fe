@@ -1,8 +1,8 @@
 <div class="width-100 float-left">
     <div class="width-80 float-left">
-        <h3 class="header">Your Point</h3>
+        <h3 class="header">{{'STUDENT.STATISTICAL.YourPoint' | translate}}</h3>
         <div class="teacher-name">
-            <h4>Name: {{user?.name}}</h4>
+            <h4>{{'STUDENT.STATISTICAL.Name' | translate}}: {{user?.name}}</h4>
         </div>
     </div>
     <div class="width-20 float-left"></div>
@@ -11,7 +11,7 @@
     <div class="width-48 float-left" style="margin-right: 4%">
         <div id="chart1">
             <div class="chart-header">
-                Point of Subjects
+                {{'STUDENT.STATISTICAL.POS' | translate}}
             </div>
             <apx-chart
                     [series]="chart1Data.series"
@@ -24,7 +24,7 @@
     <div class="width-48 float-left">
         <div id="chart2">
             <div class="chart-header">
-                Start/End time of Subjects
+                {{'STUDENT.STATISTICAL.SETOS' | translate}}
             </div>
             <apx-chart
                     [series]="chart2Data.series"
@@ -39,27 +39,27 @@
                class="mat-elevation-z8 margin-top-20">
 
             <ng-container matColumnDef="id">
-                <th mat-header-cell *matHeaderCellDef>STT</th>
+                <th mat-header-cell *matHeaderCellDef>{{'STUDENT.STATISTICAL.Index' | translate}}</th>
                 <td mat-cell *matCellDef="let element; index as i">{{i + 1}}</td>
             </ng-container>
 
             <ng-container matColumnDef="classroomCode">
-                <th mat-header-cell *matHeaderCellDef>Classroom Code</th>
+                <th mat-header-cell *matHeaderCellDef>{{'STUDENT.STATISTICAL.ClassCode' | translate}}</th>
                 <td mat-cell *matCellDef="let element">{{element.classroomCode}}</td>
             </ng-container>
 
             <ng-container matColumnDef="classroomName">
-                <th mat-header-cell *matHeaderCellDef>Classroom Name</th>
+                <th mat-header-cell *matHeaderCellDef>{{'STUDENT.STATISTICAL.ClassName' | translate}}</th>
                 <td mat-cell *matCellDef="let element">{{element.classroomCode}}</td>
             </ng-container>
 
             <ng-container matColumnDef="point">
-                <th mat-header-cell *matHeaderCellDef>Point 10</th>
+                <th mat-header-cell *matHeaderCellDef>{{'STUDENT.STATISTICAL.Point10' | translate}}</th>
                 <td mat-cell *matCellDef="let element">{{element.point}}</td>
             </ng-container>
 
             <ng-container matColumnDef="pointString">
-                <th mat-header-cell *matHeaderCellDef>Point String</th>
+                <th mat-header-cell *matHeaderCellDef>{{'STUDENT.STATISTICAL.PointString' | translate}}</th>
                 <td mat-cell *matCellDef="let element" title="{{getPointTextTitle(element.point)}}">
                     <span class="{{getPointClass(element.point)}}">
                         <b>{{getPointText(element.point)}}</b>

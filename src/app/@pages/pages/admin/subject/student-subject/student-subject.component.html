@@ -3,8 +3,8 @@
         <div class="gene-card-title">
             <div fxLayout="row" fxLayoutAlign="start center">
                 <div fxLayout="column">
-                    <h4 *ngIf="ACTION === 'new'">{{'BUTTON.New'|translate}} {{'ADMIN.GROUP.Group'|translate}}</h4>
-                    <h4 *ngIf="ACTION === 'edit'">{{'BUTTON.Edit'|translate}} {{'ADMIN.GROUP.Group'|translate}}</h4>
+                    <h4 *ngIf="ACTION === 'new'">{{'BUTTON.New'|translate}} {{'ADMIN.CRUD.SUBJECT.Student'|translate}}</h4>
+                    <h4 *ngIf="ACTION === 'edit'">{{'BUTTON.Edit'|translate}} {{'ADMIN.CRUD.SUBJECT.Student'|translate}}</h4>
                 </div>
                 <span fxFlex></span>
             </div>
@@ -15,13 +15,13 @@
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
                         <mat-form-field class="full-wid mrgn-b-md">
-                            <mat-label>{{'ADMIN.GROUP.Name'|translate}} *</mat-label>
+                            <mat-label>{{'ADMIN.CRUD.SUBJECT.Name'|translate}} *</mat-label>
                             <label>
                                 <input matInput formControlName="name">
                                 <small class="gene-block"
                                        *ngIf="detailForm.controls['name'].errors && detailForm.controls['name'].touched"
                                        class="warn-text">
-                                    {{'ADMIN.GROUP.Name'|translate}} {{'ATTENTION.Required' | translate}}
+                                    {{'ADMIN.CRUD.SUBJECT.Name'|translate}} {{'ATTENTION.Required' | translate}}
                                 </small>
                             </label>
                         </mat-form-field>
@@ -30,7 +30,7 @@
                 <div class="row {{isView(ACTION)}}">
                     <div class="deviceDto">
                         <div class="choosedDevices">
-                            <h3>{{'ADMIN.GROUP.InGroup' | translate}}</h3>
+                            <h3>{{'ADMIN.CRUD.SUBJECT.InSubject' | translate}}</h3>
                             <div class="containerDevices">
                                 <ul class="responsive-table">
                                     <li class="table-row {{this.isSelectedChoosed(i)}}"
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="unchoosedDevices">
-                            <h3>{{'ADMIN.GROUP.NotInGroup' | translate}}</h3>
+                            <h3>{{'ADMIN.CRUD.SUBJECT.NotInSubject' | translate}}</h3>
                             <div class="containerDevices">
                                 <ul class="responsive-table">
                                     <li class="table-row {{this.isSelectedUnchoosed(i)}}"

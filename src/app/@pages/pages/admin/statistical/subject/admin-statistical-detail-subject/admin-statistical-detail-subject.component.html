@@ -1,6 +1,6 @@
 <div class="width-100 float-left">
     <div class="width-80 float-left">
-        <h3 class="header">{{"SUBJECT.SubjectPoint" | translate}}</h3>
+        <h3 class="header">{{"ADMIN.STATISTICAL.SUBJECT.SubjectPoint" | translate}}</h3>
         <div class="subject-name">
             <h4>[{{subject?.code}}] {{subject?.name}}</h4>
             <h5>Teacher: {{subject?.teacherName}}</h5>
@@ -12,7 +12,7 @@
     <div class="width-48 float-left" style="margin-right: 4%">
         <div id="chart1">
             <div class="chart-header">
-                Average score By Students
+                {{"ADMIN.STATISTICAL.SUBJECT.ASBS" | translate}}
             </div>
             <apx-chart id="chartStudent"
                        [series]="chart1Data.series"
@@ -26,7 +26,7 @@
     <div class="width-48 float-left">
         <div id="chart2">
             <div class="chart-header">
-                Average score By Rubrics
+                {{"ADMIN.STATISTICAL.SUBJECT.ASBR" | translate}}
             </div>
             <apx-chart
                     [series]="chart2Data.series"
@@ -64,7 +64,7 @@
         <div class="width-48 float-left">
             <div class="chart-4-container">
                 <div class="chart-header">
-                    Number of students passing
+                    {{"ADMIN.STATISTICAL.SUBJECT.NOSP" | translate}}
                 </div>
                 <div id="chart4" class="chart-4-child">
                     <apx-chart

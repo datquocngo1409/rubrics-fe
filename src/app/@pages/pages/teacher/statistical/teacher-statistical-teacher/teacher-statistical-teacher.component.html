@@ -1,8 +1,8 @@
 <div class="width-100 float-left">
     <div class="width-80 float-left">
-        <h3 class="header">Statistical Teacher</h3>
+        <h3 class="header">{{'TEACHER.STATISTICAL.StatisticalTeacher' | translate}}</h3>
         <div class="teacher-name">
-            <h4>Teacher: {{teacher?.name}}</h4>
+            <h4>{{'TEACHER.STATISTICAL.Teacher' | translate}}: {{teacher?.name}}</h4>
         </div>
     </div>
     <div class="width-20 float-left"></div>
@@ -11,7 +11,7 @@
     <div class="width-48 float-left" style="margin-right: 4%">
         <div id="chart1">
             <div class="chart-header">
-                Number of students
+                {{'TEACHER.STATISTICAL.NOS' | translate}}
             </div>
             <apx-chart
                     [series]="chart1Data.series"
@@ -24,7 +24,7 @@
     <div class="width-48 float-left">
         <div id="chart2">
             <div class="chart-header">
-                Start/End time of Subjects
+                {{'TEACHER.STATISTICAL.SETOS' | translate}}
             </div>
             <apx-chart
                     [series]="chart2Data.series"
@@ -37,7 +37,7 @@
     <div class="width-100 float-left">
         <div class="width-48 float-left"  style="margin-right: 4%">
             <div class="chart-header">
-                Subject ratings
+                {{'TEACHER.STATISTICAL.SR' | translate}}
             </div>
             <apx-chart
                     [series]="chart3Data.series"
@@ -50,7 +50,7 @@
         </div>
         <div class="width-48 float-left">
             <div class="chart-header">
-                Subject Rating Count
+                {{'TEACHER.STATISTICAL.SRC' | translate}}
             </div>
             <div id="chart4">
                 <apx-chart

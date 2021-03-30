@@ -1,6 +1,6 @@
 <div class="width-100">
     <div class="width-90">
-        <h3 class="header">{{"ADMIN.AdminTeacher" | translate}}</h3>
+        <h3 class="header">{{"ADMIN.CRUD.TEACHER.AdminTeacher" | translate}}</h3>
     </div>
     <div class="right width-10">
         <button mat-raised-button color="primary"
@@ -13,42 +13,42 @@
         <mat-table #table [dataSource]="dataSource" matSort>
 
             <ng-container matColumnDef="id">
-                <mat-header-cell *matHeaderCellDef mat-sort-header> ID</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header> {{'ADMIN.CRUD.TEACHER.Id' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="name">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Name' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.CRUD.TEACHER.Name' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="username">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Username' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.CRUD.TEACHER.Username' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.username }} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="age">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Age' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.CRUD.TEACHER.Age' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.age }} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="address">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Address' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.CRUD.TEACHER.Address' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.address }} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="email">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Email' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.CRUD.TEACHER.Email' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.email }} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="phone">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Phone' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.CRUD.TEACHER.Phone' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.phone }} </mat-cell>
             </ng-container>
             <!-- Action Column -->
             <ng-container matColumnDef="edit">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Edit' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.CRUD.TEACHER.Edit' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element">
                     <button mat-icon-button matTooltip="Click to Edit" class="iconbutton"
                             color="primary" (click)="edit(element.userId)">

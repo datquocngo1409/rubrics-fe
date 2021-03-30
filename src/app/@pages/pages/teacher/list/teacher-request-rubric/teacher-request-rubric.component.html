@@ -2,7 +2,7 @@
     <mat-card fxFlex="100%">
         <div class="gene-card-title">
             <h3 class="header">
-                <span *ngIf="ACTION === 'NEW'">{{"ADMIN.New" | translate}} {{"REQUESTRUBRIC.RequestRubric" | translate}}</span></h3>
+                <span *ngIf="ACTION === 'NEW'">{{"BUTTON.New" | translate}} {{"TEACHER.LIST.RequestRubric" | translate}}</span></h3>
             <mat-divider></mat-divider>
         </div>
         <div class="gene-card-content" *ngIf="ACTION === 'NEW'">
@@ -10,9 +10,9 @@
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Name' | translate}}" formControlName="name">
+                        <input matInput placeholder="{{'TEACHER.LIST.Name' | translate}}" formControlName="name">
                         <mat-error *ngIf="!formGroup.controls['name'].valid && formGroup.controls['name'].touched">
-                            {{'ADMIN.Name' | translate}} {{'ERROR.IsRequired' | translate}}
+                            {{'TEACHER.LIST.Name' | translate}} {{'ERROR.IsRequired' | translate}}
                         </mat-error>
                     </mat-form-field>
                 </div>

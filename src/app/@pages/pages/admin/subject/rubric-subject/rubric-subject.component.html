@@ -1,11 +1,11 @@
 <div fxLayout="row wrap" fxLayoutAlign=" start" class="gene-form-wizard">
     <mat-card fxFlex="100%">
-        <h2><b>Rubrics Controller</b></h2>
+        <h2><b>{{'ADMIN.CRUD.SUBJECT.AdminRubric' | translate}}</b></h2>
         <div class="gene-card-title">
             <div fxLayout="row" fxLayoutAlign="start center">
                 <div fxLayout="column">
-                    <h4 *ngIf="ACTION === 'new'">{{'BUTTON.New'|translate}} {{'ADMIN.GROUP.Group'|translate}}</h4>
-                    <h4 *ngIf="ACTION === 'edit'">{{'BUTTON.Edit'|translate}} {{'ADMIN.GROUP.Group'|translate}}</h4>
+                    <h4 *ngIf="ACTION === 'new'">{{'BUTTON.New'|translate}} {{'ADMIN.CRUD.SUBJECT.Rubric'|translate}}</h4>
+                    <h4 *ngIf="ACTION === 'edit'">{{'BUTTON.Edit'|translate}} {{'ADMIN.CRUD.SUBJECT.Rubric'|translate}}</h4>
                 </div>
                 <span fxFlex></span>
             </div>
@@ -16,8 +16,8 @@
                 <div class="row {{isView(ACTION)}}">
                     <div class="deviceDto">
                         <div class="choosedDevices">
-                            <h3>{{'ADMIN.GROUP.InGroup' | translate}}</h3>
-                            <h4>Total Point: {{totalPoint}}</h4>
+                            <h3>{{'ADMIN.CRUD.SUBJECT.InSubject' | translate}}</h3>
+                            <h4>{{'ADMIN.CRUD.SUBJECT.TotalPoint' | translate}}: {{totalPoint}}</h4>
                             <div class="containerDevices">
                                 <ul class="responsive-table">
                                     <li class="table-row {{this.isSelectedChoosed(i)}}"
@@ -61,8 +61,8 @@
                             </div>
                         </div>
                         <div class="unchoosedDevices">
-                            <h3>{{'ADMIN.GROUP.NotInGroup' | translate}}</h3>
-                            <h4>Choose to Add</h4>
+                            <h3>{{'ADMIN.CRUD.SUBJECT.NotInSubject' | translate}}</h3>
+                            <h4>{{'ADMIN.CRUD.SUBJECT.ChooseToAdd' | translate}}</h4>
                             <div class="containerDevices">
                                 <ul class="responsive-table">
                                     <li class="table-row {{this.isSelectedUnchoosed(i)}}"

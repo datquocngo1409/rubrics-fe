@@ -1,9 +1,9 @@
 <div class="width-100 float-left">
     <div class="width-80 float-left">
-        <h3 class="header">{{"SUBJECT.SubjectPoint" | translate}}</h3>
+        <h3 class="header">{{"TEACHER.STATISTICAL.SubjectPoint" | translate}}</h3>
         <div class="subject-name">
             <h4>[{{subject?.code}}] {{subject?.name}}</h4>
-            <h5>Teacher: {{subject?.teacherName}}</h5>
+            <h5>{{"TEACHER.STATISTICAL.Teacher" | translate}}: {{subject?.teacherName}}</h5>
         </div>
     </div>
     <div class="width-20 float-left">
@@ -19,7 +19,7 @@
     <div class="width-48 float-left" style="margin-right: 4%">
         <div id="chart1">
             <div class="chart-header">
-                Average score By Students
+                {{"TEACHER.STATISTICAL.ASBS" | translate}}
             </div>
             <apx-chart id="chartStudent"
                     [series]="chart1Data.series"
@@ -33,7 +33,7 @@
     <div class="width-48 float-left">
         <div id="chart2">
             <div class="chart-header">
-                Average score By Rubrics
+                {{"TEACHER.STATISTICAL.ASBR" | translate}}
             </div>
             <apx-chart
                     [series]="chart2Data.series"
@@ -62,8 +62,8 @@
                 </kendo-chart-category-axis>
                 <kendo-chart-tooltip>
                     <ng-template kendoChartSeriesTooltipTemplate let-value="value">
-                        Max Score : {{ getPointText(value.to *2) }} <br>
-                        Min Score : {{ getPointText(value.from * 2) }}
+                        {{"TEACHER.STATISTICAL.MaxScore" | translate}} : {{ getPointText(value.to *2) }} <br>
+                        {{"TEACHER.STATISTICAL.MinScore" | translate}} : {{ getPointText(value.from * 2) }}
                     </ng-template>
                 </kendo-chart-tooltip>
             </kendo-chart>
@@ -71,7 +71,7 @@
         <div class="width-48 float-left">
             <div class="chart-4-container">
                 <div class="chart-header">
-                    Number of students passing
+                    {{"TEACHER.STATISTICAL.NOSP" | translate}}
                 </div>
                 <div id="chart4" class="chart-4-child">
                     <apx-chart

@@ -1,6 +1,6 @@
 <div class="width-100">
     <div class="width-90">
-        <h3 class="header">{{"ADMIN.RequestRubric" | translate}}</h3>
+        <h3 class="header">{{"ADMIN.REQUEST.RequestRubric" | translate}}</h3>
     </div>
     <div class="right width-10">
         <button mat-raised-button color="primary"
@@ -13,30 +13,30 @@
         <mat-table #table [dataSource]="dataSource" matSort>
 
             <ng-container matColumnDef="id">
-                <mat-header-cell *matHeaderCellDef mat-sort-header> ID</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header> {{'ADMIN.REQUEST.Id'|translate}} </mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="name">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Name' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.REQUEST.Name' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="user">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.UserSend' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.REQUEST.UserSend' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.requestUser}} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="created">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.IsCreated' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.REQUEST.IsCreated' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.created}} </mat-cell>
             </ng-container>
 
             Action Column
             <ng-container matColumnDef="edit">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Edit' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.REQUEST.Edit' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element">
-                    <button mat-icon-button matTooltip="Click to Edit" class="iconbutton"
+                    <button mat-icon-button matTooltip="{{'ADMIN.REQUEST.ClickToEdit'|translate}}" class="iconbutton"
                             color="primary" (click)="edit(element.rubricId)">
                         <mat-icon>edit</mat-icon>
                     </button>

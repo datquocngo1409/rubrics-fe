@@ -1,9 +1,9 @@
 <div class="width-100 float-left">
-    <h3 class="header">{{"SUBJECT.Detail" | translate}}</h3>
+    <h3 class="header">{{"STUDENT.SUBJECT.Rubric" | translate}}</h3>
     <div class="subject-name">
         <h4>[{{subject?.code}}] {{subject?.name}}</h4>
-        <h5>Teacher: {{subject?.teacherName}}</h5>
-        <h5>Start Date: {{subject?.startDate}} [Week {{calculateWeek(subject?.startDate)}}]</h5>
+        <h5>{{"STUDENT.SUBJECT.Teacher" | translate}}: {{subject?.teacherName}}</h5>
+        <h5>{{"STUDENT.SUBJECT.StartDate" | translate}}: {{subject?.startDate}} [{{"STUDENT.SUBJECT.Week" | translate}} {{calculateWeek(subject?.startDate)}}]</h5>
     </div>
 </div>
 <div class="width-100 float-left">

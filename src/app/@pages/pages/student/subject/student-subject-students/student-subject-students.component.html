@@ -1,9 +1,9 @@
 <div class="width-100 float-left">
-    <h3 class="header">{{"SUBJECT.Detail" | translate}}</h3>
+    <h3 class="header">{{"STUDENT.SUBJECT.StudentList" | translate}}</h3>
     <div class="subject-name">
         <h4>[{{subject?.code}}] {{subject?.name}}</h4>
-        <h5>Teacher: {{subject?.teacherName}}</h5>
-        <h5>Start Date: {{subject?.startDate}} [Week {{calculateWeek(subject?.startDate)}}]</h5>
+        <h5>{{"STUDENT.SUBJECT.Teacher" | translate}}: {{subject?.teacherName}}</h5>
+        <h5>{{"STUDENT.SUBJECT.StartDate" | translate}}: {{subject?.startDate}} [{{"STUDENT.SUBJECT.Week" | translate}} {{calculateWeek(subject?.startDate)}}]</h5>
     </div>
 </div>
 <div class="table-container width-100 float-left margin-top-20">
@@ -12,17 +12,17 @@
         <mat-table #table [dataSource]="dataSource" matSort>
 
             <ng-container matColumnDef="id">
-                <mat-header-cell *matHeaderCellDef mat-sort-header> ID</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{"STUDENT.SUBJECT.Id" | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="name">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Name' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'STUDENT.SUBJECT.Name' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="code">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.StudentCode' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'STUDENT.SUBJECT.StudentCode' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element">
                     <div class="form-group">
                         <span>{{element.code}}</span>
@@ -31,27 +31,27 @@
             </ng-container>
 
             <ng-container matColumnDef="username">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Username' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'STUDENT.SUBJECT.Username' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.username }} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="age">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Age' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'STUDENT.SUBJECT.Age' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.age }} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="address">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Address' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'STUDENT.SUBJECT.Address' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{getStarLength(element.address)}} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="email">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Email' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'STUDENT.SUBJECT.Email' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{getStarLength(element.email)}} </mat-cell>
             </ng-container>
 
             <ng-container matColumnDef="phone">
-                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'ADMIN.Phone' | translate}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef mat-sort-header>{{'STUDENT.SUBJECT.Phone' | translate}}</mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{getStarLength(element.phone)}} </mat-cell>
             </ng-container>
             <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

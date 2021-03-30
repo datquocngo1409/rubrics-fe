@@ -43,11 +43,6 @@ export class HorizontalMenuItems {
                 tutorial: 'stepAdmin',
                 children: [
                     {state: 'admin/rubric', name: 'NAVBAR.Rubric', type: 'link'},
-                    {
-                        state: 'admin/request-rubric',
-                        name: 'NAVBAR.RequestRubric',
-                        type: 'link'
-                    },
                     {state: 'admin/subject', name: 'NAVBAR.Subject', type: 'link'},
                     {state: 'admin/teacher', name: 'NAVBAR.Teacher', type: 'link'},
                     {state: 'admin/student', name: 'NAVBAR.Student', type: 'link'}

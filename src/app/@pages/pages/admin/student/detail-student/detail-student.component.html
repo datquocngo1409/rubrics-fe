@@ -2,8 +2,8 @@
     <mat-card fxFlex="100%">
         <div class="gene-card-title">
             <h3 class="header">
-                <span *ngIf="ACTION === 'NEW'">{{"ADMIN.New" | translate}} {{"STUDENT.Student" | translate}}</span>
-                <span *ngIf="ACTION === 'EDIT'">{{"ADMIN.Edit" | translate}} {{"STUDENT.Student" | translate}}</span>
+                <span *ngIf="ACTION === 'NEW'">{{"ADMIN.New" | translate}} {{"ADMIN.CRUD.STUDENT.Student" | translate}}</span>
+                <span *ngIf="ACTION === 'EDIT'">{{"ADMIN.Edit" | translate}} {{"ADMIN.CRUD.STUDENT.Student" | translate}}</span>
             </h3>
             <mat-divider></mat-divider>
         </div>
@@ -11,29 +11,29 @@
             <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="form">
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Username' | translate}}" formControlName="username">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.Username' | translate}}" formControlName="username">
                         <mat-error
                                 *ngIf="!formGroup.controls['username'].valid && formGroup.controls['username'].touched">
-                            {{'ADMIN.Username' | translate}} {{'ERROR.IsRequired' | translate}}
+                            {{'ADMIN.CRUD.STUDENT.Username' | translate}} {{'ERROR.IsRequired' | translate}}
                         </mat-error>
                     </mat-form-field>
                 </div>
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Password' | translate}}" formControlName="password" type="password">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.Password' | translate}}" formControlName="password" type="password">
                         <mat-error
                                 *ngIf="!formGroup.controls['password'].valid && formGroup.controls['password'].touched">
-                            {{'ADMIN.Password' | translate}} {{'ERROR.IsRequired' | translate}}
+                            {{'ADMIN.CRUD.STUDENT.Password' | translate}} {{'ERROR.IsRequired' | translate}}
                         </mat-error>
                     </mat-form-field>
                 </div>
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Name' | translate}}" formControlName="name">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.Name' | translate}}" formControlName="name">
                         <mat-error *ngIf="!formGroup.controls['name'].valid && formGroup.controls['name'].touched">
-                            {{'ADMIN.Name' | translate}} {{'ERROR.IsRequired' | translate}}
+                            {{'ADMIN.CRUD.STUDENT.Name' | translate}} {{'ERROR.IsRequired' | translate}}
                         </mat-error>
                     </mat-form-field>
                 </div>
@@ -64,10 +64,10 @@
             <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="form">
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Username' | translate}}" formControlName="username">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.Username' | translate}}" formControlName="username">
                         <mat-error
                                 *ngIf="!formGroup.controls['username'].valid && formGroup.controls['username'].touched">
-                            {{'ADMIN.Username' | translate}} {{'ERROR.IsRequired' | translate}}
+                            {{'ADMIN.CRUD.STUDENT.Username' | translate}} {{'ERROR.IsRequired' | translate}}
                         </mat-error>
                     </mat-form-field>
                 </div>
@@ -84,52 +84,52 @@
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Name' | translate}}" formControlName="name">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.Name' | translate}}" formControlName="name">
                         <mat-error *ngIf="!formGroup.controls['name'].valid && formGroup.controls['name'].touched">
-                            {{'ADMIN.Name' | translate}} {{'ERROR.IsRequired' | translate}}
+                            {{'ADMIN.CRUD.STUDENT.Name' | translate}} {{'ERROR.IsRequired' | translate}}
                         </mat-error>
                     </mat-form-field>
                 </div>
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Code' | translate}}" formControlName="code" type="number">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.Code' | translate}}" formControlName="code" type="number">
                         <mat-error *ngIf="!formGroup.controls['code'].valid && formGroup.controls['code'].touched">
-                            {{'ADMIN.Code' | translate}} {{'ERROR.IsRequired' | translate}}
+                            {{'ADMIN.CRUD.STUDENT.Code' | translate}} {{'ERROR.IsRequired' | translate}}
                         </mat-error>
                     </mat-form-field>
                 </div>
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Age' | translate}}" formControlName="age" type="number">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.Age' | translate}}" formControlName="age" type="number">
                     </mat-form-field>
                 </div>
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.PhoneNumber' | translate}}" formControlName="phone" type="text">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.PhoneNumber' | translate}}" formControlName="phone" type="text">
                     </mat-form-field>
                 </div>
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Email' | translate}}" formControlName="email" type="text">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.Email' | translate}}" formControlName="email" type="text">
                         <mat-error *ngIf="!formGroup.controls['email'].valid && formGroup.controls['email'].touched">
-                            {{'ADMIN.Email' | translate}} {{'ERROR.IsInvalid' | translate}}
+                            {{'ADMIN.CRUD.STUDENT.Email' | translate}} {{'ERROR.IsInvalid' | translate}}
                         </mat-error>
                     </mat-form-field>
                 </div>
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.Address' | translate}}" formControlName="address" type="text">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.Address' | translate}}" formControlName="address" type="text">
                     </mat-form-field>
                 </div>
 
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <mat-form-field class="form-element" fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                        <input matInput placeholder="{{'ADMIN.AvatarUrl' | translate}}" formControlName="avatar" type="text">
+                        <input matInput placeholder="{{'ADMIN.CRUD.STUDENT.AvatarUrl' | translate}}" formControlName="avatar" type="text">
                     </mat-form-field>
                 </div>
 

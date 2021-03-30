@@ -1,9 +1,9 @@
 <div class="width-100 float-left">
     <div class="width-100 float-left">
-        <h3 class="header">Subject Point</h3>
+        <h3 class="header">{{"TEACHER.POINT.SubjectPoint" | translate}}</h3>
         <div class="subject-name">
             <h4>[{{subject?.code}}] {{subject?.name}}</h4>
-            <h5>Teacher: {{subject?.teacherName}}</h5>
+            <h5>{{"TEACHER.POINT.Teacher" | translate}}: {{subject?.teacherName}}</h5>
             <h4>{{subjectRubricImportant?.rubricName}}</h4>
         </div>
     </div>
@@ -29,9 +29,9 @@
         <div class="pad-wrap justify-content-end">
             <mat-card-actions class="float-right">
                 <button mat-raised-button color="warn" type="button"
-                        (click)="onCancel()">Cancel</button>
+                        (click)="onCancel()">{{'BUTTON.Cancel'|translate}}</button>
                 <button mat-raised-button color="primary" type="submit" class="button" (click)="onSubmit()">
-                    Update
+                    {{'BUTTON.Update'|translate}}
                 </button>
             </mat-card-actions>
         </div>

@@ -1,4 +1,207 @@
 {
+  "ADMIN": {
+    "Edit": "Edit",
+    "New": "New",
+    "Update": "Update",
+    "REQUEST": {
+      "RequestRubric": "Request Rubric",
+      "Id": "ID",
+      "Name": "Name",
+      "UserSend": "User Send",
+      "IsCreated": "Is Created",
+      "Edit": "Edit",
+      "ClickToEdit": "Click to Edit"
+    },
+    "RUBRIC": {
+      "Rubric": "Rubric",
+      "Id": "ID",
+      "Name": "Name",
+      "Edit": "Edit",
+      "ClickToEdit": "Click to Edit"
+    },
+    "STATISTICAL": {
+      "SUBJECT": {
+        "SubjectList": "Subject List",
+        "Teacher": "Teacher",
+        "Week": "Week",
+        "SubjectPoint": "Subject Point",
+        "ASBS": "Average score By Students",
+        "ASBR": "Average score By Rubrics",
+        "NOSP": "Number of students passing"
+      },
+      "TEACHER": {
+        "StatisticalTeacher": "Statistical Teacher",
+        "Teacher": "Teacher",
+        "NOS": "Number of Students",
+        "SETOS": "Start/End time of Subjects",
+        "SR": "Subject ratings",
+        "SRC": "Subject Rating Count"
+      }
+    },
+    "CRUD": {
+      "STUDENT": {
+        "Student": "Admin Student",
+        "Id": "ID",
+        "Name": "Name",
+        "StudentCode": "Student Code",
+        "Code": "Code",
+        "Username": "Username",
+        "Password": "Password",
+        "Age": "Age",
+        "Address": "Address",
+        "Email": "Email",
+        "Phone": "Phone",
+        "AvatarUrl": "Avatar Url",
+        "Edit": "Edit",
+        "ClickToEdit": "Click to Edit"
+      },
+      "SUBJECT": {
+        "Subject": "Subject",
+        "AdminSubject": "Admin Subject",
+        "Id": "ID",
+        "Code": "Code",
+        "Name": "Name",
+        "StartDate": "Start Date",
+        "Teacher": "Teacher",
+        "EndDate": "End Date",
+        "NumberStudents": "Number Students",
+        "Option": "Option",
+        "AdminRubric": "Subject Rubrics",
+        "Rubric": "Rubric",
+        "InSubject": "In Subject",
+        "TotalPoint": "Total Point",
+        "NotInSubject": "Not In Subject",
+        "ChooseToAdd": "Choose To Add",
+        "Student": "Student"
+      },
+      "TEACHER": {
+        "AdminTeacher": "Admin Teacher",
+        "Teacher": "Teacher",
+        "Id": "ID",
+        "Name": "Name",
+        "Username": "Username",
+        "Age": "Age",
+        "Address": "Address",
+        "Email": "Email",
+        "Phone": "Phone",
+        "PhoneNumber": "Phone Number",
+        "AvatarUrl": "Avatar Url",
+        "Edit": "Edit",
+        "Password": "Password"
+      }
+    }
+  },
+  "STUDENT": {
+    "SUBJECT": {
+      "LIST": {
+        "SubjectList": "Subject List",
+        "Teacher": "Teacher",
+        "Week": "Week",
+        "Learning": "Learning",
+        "NotIn": "Not In",
+        "Learned": "Learned"
+      },
+      "RATING": {
+        "Subject": "Subject",
+        "Teacher": "Teacher",
+        "StartDate": "Start Date",
+        "Week": "Week"
+      },
+      "Rating": "Rating",
+      "Rubric": "Rubric",
+      "SubjectPoint": "Subject Point",
+      "Subject": "Subject",
+      "Teacher": "Teacher",
+      "StartDate": "Start Date",
+      "Week": "Week",
+      "StudentList": "Student List",
+      "Point": "Point",
+      "Rubrics": "Rubrics",
+      "Rate": "Rate",
+      "Index": "Index",
+      "StudentCode": "Student Code",
+      "StudentName": "Student Name",
+      "IsPassed": "Is Passed",
+      "Option": "Option",
+      "TakeRating": "Take Rating",
+      "Id": "ID",
+      "Name": "Name",
+      "Username": "Username",
+      "Age": "Age",
+      "Address": "Address",
+      "Email": "Email",
+      "Phone": "Phone"
+    },
+    "STATISTICAL": {
+      "YourPoint": "Your Point",
+      "Name": "Name",
+      "POS": "Point of Subjects",
+      "SETOS": "Start/End time of Subjects",
+      "Index": "Index",
+      "ClassCode": "Class Code",
+      "ClassName": "Class Name",
+      "Point10": "Point 10",
+      "PointString": "Point String",
+      "SubjectList": "Subject List",
+      "Teacher": "Teacher",
+      "Week": "Week",
+      "ASBS": "Average score By Students",
+      "ASBR": "Average score By Rubrics",
+      "NOSP": "Number of students passing",
+      "MaxScore": "Max Score",
+      "MinScore": "Min Score"
+    }
+  },
+  "TEACHER": {
+    "LIST": {
+      "SubjectList": "Subject List",
+      "Teacher": "Teacher",
+      "Week": "Week",
+      "Teaching": "Teaching",
+      "OtherTeacher": "Other Teacher",
+      "Taught": "Taught",
+      "RequestRubric": "Request Rubric",
+      "Name": "Name"
+    },
+    "ADDRUBRIC": {
+      "AddRubric": "Add Rubric",
+      "Rubric": "Rubric",
+      "InSubject": "In Subject",
+      "TotalPoint": "Total Point",
+      "NotInSubject": "Not In Subject",
+      "ChooseToAdd": "Choose To Add"
+    },
+    "POINT": {
+      "View": "View",
+      "Update": "Update",
+      "Point": "Point",
+      "StudentCode": "Student Code",
+      "StudentName": "Student Name",
+      "SubjectPoint": "Subject Point",
+      "Teacher": "Teacher",
+      "Index": "Index",
+      "Option": "Option"
+    },
+    "STATISTICAL": {
+      "SubjectPoint": "Subject Point",
+      "Teacher": "Teacher",
+      "ASBS": "Average score By Students",
+      "ASBR": "Average score By Rubrics",
+      "MaxScore": "Max Score",
+      "MinScore": "Min Score",
+      "NOSP": "Number of students passing",
+      "SubjectList": "Subject List",
+      "Week": "Week",
+      "Teaching": "Teaching",
+      "OtherTeacher": "Other Teacher",
+      "Taught": "Taught",
+      "StatisticalTeacher": "Statistical Teacher",
+      "NOS": "Number of Students",
+      "SETOS": "Start/End time of Subjects",
+      "SR": "Subject Rating",
+      "SRC": "Subject Rating Count"
+    }
+  },
   "ERROR": {
     "IsRequired": "is required",
     "IsInvalid": "is invalid"
@@ -24,14 +227,16 @@
     "Teacher": "Teacher",
     "Student": "Student",
     "Rubric": "Rubric",
-    "YourPoint": "Your Point",
-    "YourClass": "Your Class"
+    "YourPoint": "Your Points",
+    "YourClass": "Your Classes",
+    "YourStatistical": "Your Statistical"
   },
   "BUTTON": {
     "Rate": "Rate",
     "Cancel": "Cancel",
     "Submit": "Submit",
     "Comment": "Comment",
+    "Update": "Update",
     "New": "New"
   },
   "Top Products": "Top Products",

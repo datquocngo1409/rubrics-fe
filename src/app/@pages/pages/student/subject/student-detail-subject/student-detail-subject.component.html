@@ -1,33 +1,33 @@
 <div class="width-80 float-left">
-    <h3 class="header">{{"SUBJECT.Detail" | translate}}</h3>
+    <h3 class="header">{{"STUDENT.SUBJECT.Subject" | translate}}</h3>
     <div class="subject-name">
         <h4>[{{subject?.code}}] {{subject?.name}}</h4>
-        <h5>Teacher: {{subject?.teacherName}}</h5>
-        <h5>Start Date: {{subject?.startDate}} [Week {{calculateWeek(subject?.startDate)}}]</h5>
+        <h5>{{"STUDENT.SUBJECT.Teacher" | translate}}: {{subject?.teacherName}}</h5>
+        <h5>{{"STUDENT.SUBJECT.StartDate" | translate}}: {{subject?.startDate}} [{{"STUDENT.SUBJECT.Week" | translate}} {{calculateWeek(subject?.startDate)}}]</h5>
     </div>
 </div>
 <div class="width-20 float-left">
     <div class="width-100 margin-top-20">
         <button mat-raised-button color="primary" class="subject-button"
-                (click)="goStudentList(subject.id)">View Student List</button>
+                (click)="goStudentList(subject.id)">{{"STUDENT.SUBJECT.StudentList" | translate}}</button>
     </div>
     <div class="width-100 margin-top-20">
         <button mat-raised-button color="primary" class="subject-button"
-                (click)="goViewPoint(subject.id)">View Point</button>
+                (click)="goViewPoint(subject.id)">{{"STUDENT.SUBJECT.Point" | translate}}</button>
     </div>
     <div class="width-100 margin-top-20">
         <button mat-raised-button color="primary" class="subject-button"
-                (click)="goViewRubric(subject.id)">View Rubric</button>
+                (click)="goViewRubric(subject.id)">{{"STUDENT.SUBJECT.Rubrics" | translate}}</button>
     </div>
     <div class="width-100 margin-top-20">
         <button mat-raised-button color="primary" class="subject-button"
-                (click)="goRate(subject.id)">Rate</button>
+                (click)="goRate(subject.id)">{{"STUDENT.SUBJECT.Rate" | translate}}</button>
     </div>
 </div>
 <div class="width-100 float-left">
     <div *ngFor="let wNum of weekNumber">
         <div class="week" [ngClass]="getWeekColor(wNum, subject?.startDate)">
-            <span class="week-text">{{"SUBJECT.Week" | translate}} {{wNum}}</span>
+            <span class="week-text">{{"STUDENT.SUBJECT.Week" | translate}} {{wNum}}</span>
         </div>
         <div class="week-content">
             <ul>

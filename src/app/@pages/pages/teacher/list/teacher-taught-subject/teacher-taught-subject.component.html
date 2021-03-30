@@ -1,4 +1,4 @@
-<h3 class="header">{{"SUBJECT.SubjectList" | translate}}</h3>
+<h3 class="header">{{"TEACHER.LIST.SubjectList" | translate}}</h3>
 <div class="left-content">
     <mat-card *ngFor="let subject of subjects" (click)="viewDetail(subject.id, subject.teacherId)" class="taught">
         <mat-card-header>
@@ -7,8 +7,8 @@
             </mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <span class="teacher-in-subject">{{"SUBJECT.Teacher" | translate}}: {{subject.teacherName}}</span>
-            <span>{{"SUBJECT.Week" | translate}}: {{(calculateWeek(subject.startDate) > 15 ? 'Finished' : calculateWeek(subject.startDate))}}</span>
+            <span class="teacher-in-subject">{{"TEACHER.LIST.Teacher" | translate}}: {{subject.teacherName}}</span>
+            <span>{{"TEACHER.LIST.Week" | translate}}: {{(calculateWeek(subject.startDate) > 15 ? 'Finished' : calculateWeek(subject.startDate))}}</span>
         </mat-card-content>
     </mat-card>
 </div>

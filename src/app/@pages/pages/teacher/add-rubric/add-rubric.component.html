@@ -1,11 +1,11 @@
 <div fxLayout="row wrap" fxLayoutAlign=" start" class="gene-form-wizard">
     <mat-card fxFlex="100%">
-        <h2><b>Rubrics Controller</b></h2>
+        <h2><b>{{'TEACHER.ADDRUBRIC.AddRubric'|translate}}</b></h2>
         <div class="gene-card-title">
             <div fxLayout="row" fxLayoutAlign="start center">
                 <div fxLayout="column">
-                    <h4 *ngIf="ACTION === 'new'">{{'BUTTON.New'|translate}} {{'ADMIN.RUBRIC.Rubric'|translate}}</h4>
-                    <h4 *ngIf="ACTION === 'edit'">{{'BUTTON.Edit'|translate}} {{'ADMIN.RUBRIC.Rubric'|translate}}</h4>
+                    <h4 *ngIf="ACTION === 'new'">{{'BUTTON.New'|translate}} {{'TEACHER.ADDRUBRIC.Rubric'|translate}}</h4>
+                    <h4 *ngIf="ACTION === 'edit'">{{'BUTTON.Edit'|translate}} {{'TEACHER.ADDRUBRIC.Rubric'|translate}}</h4>
                 </div>
                 <span fxFlex></span>
             </div>
@@ -16,8 +16,8 @@
                 <div class="row {{isView(ACTION)}}">
                     <div class="deviceDto">
                         <div class="choosedDevices">
-                            <h3>{{'ADMIN.GROUP.InGroup' | translate}}</h3>
-                            <h4>Total Point: {{totalPoint}}</h4>
+                            <h3>{{'TEACHER.ADDRUBRIC.InSubject'|translate}}</h3>
+                            <h4>{{'TEACHER.ADDRUBRIC.TotalPoint'|translate}}: {{totalPoint}}</h4>
                             <div class="containerDevices">
                                 <ul class="responsive-table">
                                     <li class="table-row {{this.isSelectedChoosed(i)}}"
@@ -61,8 +61,8 @@
                             </div>
                         </div>
                         <div class="unchoosedDevices">
-                            <h3>{{'ADMIN.GROUP.NotInGroup' | translate}}</h3>
-                            <h4>Choose to Add</h4>
+                            <h3>{{'TEACHER.ADDRUBRIC.NotInSubject'|translate}}</h3>
+                            <h4>{{'TEACHER.ADDRUBRIC.ChooseToAdd'|translate}}</h4>
                             <div class="containerDevices">
                                 <ul class="responsive-table">
                                     <li class="table-row {{this.isSelectedUnchoosed(i)}}"
@@ -92,8 +92,8 @@
                 </div>
                 <div class="pad-wrap justify-content-end">
                     <mat-card-actions class="float-right">
-                        <button mat-raised-button color="warn" type="button"
-                                (click)="requestNewRubric()">{{'BUTTON.RequestNew'|translate}} {{'ADMIN.RUBRIC.Rubric'|translate}}</button>
+<!--                        <button mat-raised-button color="warn" type="button"-->
+<!--                                (click)="requestNewRubric()">{{'BUTTON.New'|translate}} {{'ADMIN.RUBRIC.Rubric'|translate}}</button>-->
                         <button mat-raised-button color="warn" type="button"
                                 (click)="onCancel()">{{'BUTTON.Cancel'|translate}}</button>
                         <button mat-raised-button color="primary" type="submit"
