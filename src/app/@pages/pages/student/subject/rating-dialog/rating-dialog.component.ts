@@ -65,6 +65,6 @@ export class RatingDialogComponent implements OnInit {
     }
 
     cancel() {
-
+        this.dialogRef.close();
     }
 }

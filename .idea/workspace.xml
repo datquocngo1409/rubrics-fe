@@ -23,8 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bc71ca5-1c23-4a55-a4f9-aeb13ac0defb" name="Default Changelist" comment="fix i18n">
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/tutorial-dialog/tutorial/tutorial.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/tutorial-dialog/tutorial/tutorial.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/tutorial-dialog/tutorial/tutorial.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/@pages/pages/tutorial-dialog/tutorial/tutorial.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/i18n/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/i18n/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/admin/statistical/subject/admin-statistical-detail-subject/admin-statistical-detail-subject.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/admin/statistical/subject/admin-statistical-detail-subject/admin-statistical-detail-subject.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/admin/subject/rubric-subject/rubric-subject.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/admin/subject/rubric-subject/rubric-subject.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/student-statistical-subject-detail/student-statistical-subject-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/statistical/your-point/your-point.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/rating-dialog/rating-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/rating-dialog/rating-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/student/subject/student-subject-rate/student-subject-rate.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/teacher/point/teacher-point-subject/teacher-point-subject.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/teacher/point/teacher-point-subject/teacher-point-subject.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/@pages/pages/teacher/statistical/teacher-statistical-detail-subject/teacher-statistical-detail-subject.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/@pages/pages/teacher/statistical/teacher-statistical-detail-subject/teacher-statistical-detail-subject.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/crm/crm.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/crm/crm.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/i18n/vi.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/i18n/vi.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +307,17 @@
       <workItem from="1616984140335" duration="7379000" />
       <workItem from="1617000401396" duration="7870000" />
       <workItem from="1617067311187" duration="11229000" />
-      <workItem from="1617087101169" duration="742000" />
+      <workItem from="1617087101169" duration="3732000" />
+      <workItem from="1617153437245" duration="29000" />
+      <workItem from="1617334124019" duration="1274000" />
+      <workItem from="1617352979641" duration="2512000" />
+      <workItem from="1617355508379" duration="1036000" />
+      <workItem from="1617356560692" duration="44000" />
+      <workItem from="1617356620277" duration="17000" />
+      <workItem from="1617356653787" duration="81000" />
+      <workItem from="1617356749089" duration="257000" />
+      <workItem from="1617412514608" duration="1714000" />
+      <workItem from="1617437482568" duration="1087000" />
     </task>
     <task id="LOCAL-00001" summary="add login and menu">
       <created>1604133995984</created>
@@ -558,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617080030336</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fix i18n">
+      <created>1617088211111</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1617088211111</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

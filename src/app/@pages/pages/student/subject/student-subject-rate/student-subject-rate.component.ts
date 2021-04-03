@@ -34,6 +34,7 @@ export class StudentSubjectRateComponent implements OnInit {
     nowRate;
     ratings;
     dialogRef;
+    dataRatings;
 
     constructor(
         private route: ActivatedRoute,
@@ -48,7 +49,7 @@ export class StudentSubjectRateComponent implements OnInit {
             series: [
                 {
                     name: 'basic',
-                    data: [1380, 1200, 1100, 690, 580, 540, 470, 448, 430, 400]
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
                 }
             ],
             chart: {
@@ -78,6 +79,7 @@ export class StudentSubjectRateComponent implements OnInit {
                 ]
             }
         };
+        this.dataRatings = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         const id = +this.route.snapshot.paramMap.get('id');
         this.api.getSubjectById(id).subscribe(subject => {
             this.subject = subject;
@@ -85,6 +87,40 @@ export class StudentSubjectRateComponent implements OnInit {
                 this.nowRate = nowRate;
                 this.api.getAllRatingBySubject(id).subscribe(ratings => {
                     this.ratings = ratings;
+                    for (const rating of this.ratings) {
+                        if (rating.point < 10) {
+                            this.dataRatings[9]++;
+                        } else if (rating.point < 20) {
+                            this.dataRatings[8]++;
+                        } else if (rating.point < 30) {
+                            this.dataRatings[7]++;
+                        } else if (rating.point < 40) {
+                            this.dataRatings[6]++;
+                        } else if (rating.point < 50) {
+                            this.dataRatings[5]++;
+                        } else if (rating.point < 60) {
+                            this.dataRatings[4]++;
+                        } else if (rating.point < 70) {
+                            this.dataRatings[3]++;
+                        } else if (rating.point < 80) {
+                            this.dataRatings[2]++;
+                        } else if (rating.point < 90) {
+                            this.dataRatings[1]++;
+                        } else if (rating.point <= 100) {
+                            this.dataRatings[0]++;
+                        }
+                    }
+                    const series = [
+                        {
+                            name: 'basic',
+                            data: this.dataRatings
+                        }
+                    ];
+                    this.chartOptions = {
+                        ...this.chartOptions, ...{
+                            series: series
+                        }
+                    };
                 });
             });
         });

@@ -125,12 +125,16 @@ export class RubricSubjectComponent implements OnInit {
                 }
             }
         }
-        const addList = [];
+        let addList = [];
         for (const rubric of rubricNewArray) {
             const d = rubricOldArray.find(item => item.rubricId === rubric.rubricId);
             if (d === undefined) {
                 addList.push(rubric);
             }
+        }
+        if (addList.length === 1 && addList[0].important === undefined) {
+            console.log('hello');
+            addList = [];
         }
         const delList = [];
         for (const rubric of rubricOldArray) {
@@ -196,6 +200,7 @@ export class RubricSubjectComponent implements OnInit {
                 }
             })
         } else {
+            console.log(addList);
             if (addList.length > 0) {
                 let rubricIdList = '';
                 let importantIdList = ''

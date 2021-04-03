@@ -66,6 +66,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import {ChartsModule} from 'ng2-charts';
 import { NgxDonutChartModule } from 'ngx-doughnut-chart';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { TutorialComponent } from './@pages/pages/tutorial-dialog/tutorial/tutorial.component';
 
 export const firebaseConfig = {
     apiKey: 'AIzaSyCE0po6Q8jGuBEds-A903KEU4U6Cerojzo',
@@ -159,6 +160,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
         MainComponent,
         SideBarComponent, FooterComponent,
         HorizontalLayoutComponent,
+        TutorialComponent,
     ],
     bootstrap: [GeneAppComponent],
     providers: [

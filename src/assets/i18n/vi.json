@@ -1,148 +1,246 @@
 {
-   "ERROR": {
-      "IsRequired": "không thể rỗng",
-      "IsInvalid": "sai định dạng"
-   },
-   "ALERT": {
-      "OnlyStudentCanRate": "Chỉ sinh viên mới được quyền đánh giá",
-      "OnlyStudentCanComment": "Chỉ sinh viên mới được quyền bình luận"
-   },
-   "NAVBAR" : {
-      "Home": "Trang chủ",
-      "Account": "Tài Khoản",
-      "Setting": "Cài Đặt",
-      "Subject": "Môn học",
-      "YourSubject": "Môn học của bạn",
-      "OtherSubject": "Môn học khác",
-      "RatedSubject": "Môn học đã đánh giá",
-      "NotRatedSubject": "Môn học chưa đánh giá",
-      "Teacher": "Giảng viên",
-      "YourTeacher": "Giảng viên đang dạy",
-      "OtherTeacher": "Giảng viên khác",
-      "RatedTeacher": "Giảng viên đã đánh giá",
-      "NotRatedTeacher": "Giảng viên chưa đánh giá",
-      "Statistical": "Thống kê",
-      "Admin": "Quản trị",
-     "Student": "Sinh viên"
-   },
-   "HOME": {
-      "DevelopedByGroup7": "Phát triển bởi Nhóm 7",
-      "RatingSubject": "Đánh giá Môn học",
-      "StoryAboutUs": "Thông tin về chúng tôi",
-      "MembersOfGroup7": "Các thành viên Nhóm 7",
-      "LEADER": "NHÓM TRƯỞNG",
-      "AboutMyApplication": "THÔNG TIN VỀ ỨNG DỤNG",
-      "ThanksForTheSupports": "CẢM ƠN SỰ HỖ TRỢ",
-      "TEACHER": "GIẢNG VIÊN",
-      "SUPPORT DOMAIN": "HỖ TRỢ DOMAIN",
-      "SUPPORT TO DEPLOY": "HỖ TRỢ DEPLOY",
-      "ANOTHER SUPPORT": "CÁC SỰ HỖ TRỢ KHÁC",
-      "ALearningAidApplication": "Ứng dụng hỗ trợ giáo dục"
-   },
-   "SUBJECT": {
-      "Subject": "Môn học",
-      "SubjectList": "Danh sách môn học",
-      "RatedSubjectList": "Danh sách môn học đã đánh giá",
-      "NotRatedSubjectList": "Danh sách môn học chưa đánh giá",
-      "SubjectInfomation": "Thông tin môn học",
-      "Code": "Mã môn học",
-      "Name": "Tên môn học",
-      "StartDate": "Ngày bắt đầu",
-      "EndDate": "Ngày kết thúc",
-      "Teacher": "Giảng viên",
-      "Week": "Tuần",
-      "Comment": "Bình luận",
-      "Comments": "Bình luận",
-      "Replies": "Phản hồi",
-      "Reply": "Phản hồi"
-   },
-   "TEACHER": {
-      "TeacherList": "Danh sách Giảng viên",
-      "RatedTeacherList": "Danh sách giảng viên đã đánh giá",
-      "NotRatedTeacherList": "Danh sách giảng viên chưa đánh giá",
-      "RatedSubjectList": "Rated Subject List",
-      "NotRatedSubjectList": "Not Rated Subject List",
-      "TeacherInformation": "Thông tin Giảng viên",
-      "TEACHER": "GIẢNG VIÊN",
-      "Teacher": "Giảng viên",
-      "Name": "Tên",
-      "PhoneNumber": "Số điện thoại",
-      "Email" : "Email",
-      "Age": "Tuổi"
-   },
-   "STATISTICAL": {
-      "StatisticalSubject": "Thống kê môn học",
-      "StatisticalTeacher": "Thống kê giảng viên"
-   },
    "ADMIN": {
-      "AdminSubject": "Quản trị môn học",
-      "AdminStudent": "Quản trị sinh viên",
-      "AdminTeacher": "Quản trị giảng viên",
-      "Name": "Tên",
-      "StudentCode": "MSSV",
-      "Code": "Mã",
-      "Teacher": "Giảng viên",
-      "Username": "Tên đăng nhập",
-      "Age": "Tuổi",
-      "Address": "Địa chỉ",
-      "Email": "Email",
-      "Phone": "SĐT",
-      "StartDate": "Ngày bắt đầu",
-      "EndDate": "Ngày kết thúc",
-      "RatingValue": "Điểm đánh giá",
-      "RatingCount": "Lượt đánh giá",
       "Edit": "Sửa",
-      "Delete": "Xóa",
       "New": "Tạo mới",
-      "Submit": "Submit",
-      "Password": "Mật khẩu",
-      "MSSV": "MSSV",
-      "PhoneNumber": "Số điện thoại",
-      "AvatarUrl": "Link ảnh đại diện"
+      "Update": "Cập nhật",
+      "REQUEST": {
+         "RequestRubric": "Tiêu chí yêu cầu",
+         "Id": "ID",
+         "Name": "Tên",
+         "UserSend": "Người gửi",
+         "IsCreated": "Đã tạo",
+         "Edit": "Sửa",
+         "ClickToEdit": "Chọn để sửa"
+      },
+      "RUBRIC": {
+         "Rubric": "Tiêu chí",
+         "Id": "ID",
+         "Name": "Tên",
+         "Edit": "Sửa",
+         "ClickToEdit": "Chọn để sửa"
+      },
+      "STATISTICAL": {
+         "SUBJECT": {
+            "SubjectList": "Danh sách môn học",
+            "Teacher": "Giảng viên",
+            "Week": "Tuần",
+            "SubjectPoint": "Điểm môn học",
+            "ASBS": "Điểm trung bình theo sinh viên",
+            "ASBR": "Điểm trung bình theo tiêu chí",
+            "NOSP": "Số lượng học sinh qua môn"
+         },
+         "TEACHER": {
+            "StatisticalTeacher": "Thống kê giảng viên",
+            "Teacher": "Giẩng viên",
+            "NOS": "Số lượng học sinh",
+            "SETOS": "Thời gian môn học",
+            "SR": "Đánh giá môn học",
+            "SRC": "Số lượng đánh giá môn học"
+         }
+      },
+      "CRUD": {
+         "STUDENT": {
+            "Student": "Quản trị sinh viên",
+            "Id": "ID",
+            "Name": "Tên",
+            "StudentCode": "Mã sinh viên",
+            "Code": "Mã",
+            "Username": "Tên đăng nhập",
+            "Password": "Mật khẩu",
+            "Age": "Tuổi",
+            "Address": "Địa chỉ",
+            "Email": "Email",
+            "Phone": "Số điện thoại",
+            "AvatarUrl": "Đường link ảnh đại diện",
+            "Edit": "Sửa",
+            "ClickToEdit": "Chọn để sửa"
+         },
+         "SUBJECT": {
+            "Subject": "Môn học",
+            "AdminSubject": "Quản trị môn học",
+            "Id": "ID",
+            "Code": "Mã",
+            "Name": "Tên",
+            "StartDate": "Ngày bắt đầu",
+            "Teacher": "Giảng viên",
+            "EndDate": "Ngày kết thúc",
+            "NumberStudents": "Số lượng sinh viên",
+            "Option": "Lựa chọn",
+            "AdminRubric": "Các tiêu chí môn học",
+            "Rubric": "Tiêu chí",
+            "InSubject": "Trong môn học",
+            "TotalPoint": "Tổng điểm",
+            "NotInSubject": "Không trong môn học",
+            "ChooseToAdd": "Chọn để thêm",
+            "Student": "Sinh viên"
+         },
+         "TEACHER": {
+            "AdminTeacher": "Quản trị giảng viên",
+            "Teacher": "Giảng viên",
+            "Id": "ID",
+            "Name": "Tên",
+            "Username": "Tên đăng nhập",
+            "Age": "Tuổi",
+            "Address": "Địa chỉ",
+            "Email": "Email",
+            "Phone": "Điện thoại",
+            "PhoneNumber": "Số điện thoại",
+            "AvatarUrl": "Đường link ảnh đại diện",
+            "Edit": "Sửa",
+            "Password": "Mật khẩu"
+         }
+      }
    },
    "STUDENT": {
-      "Student": "Student"
+      "SUBJECT": {
+         "LIST": {
+            "SubjectList": "Danh sách môn học",
+            "Teacher": "Giảng viên",
+            "Week": "Tuần",
+            "Learning": "Đang học",
+            "NotIn": "Không trong lớp",
+            "Learned": "Đã học"
+         },
+         "RATING": {
+            "Subject": "Môn học",
+            "Teacher": "Giảng viên",
+            "StartDate": "Ngày bắt đầu",
+            "Week": "Tuần"
+         },
+         "Rating": "Đánh giá",
+         "Rubric": "Tiêu chí",
+         "SubjectPoint": "Điểm môn học",
+         "Subject": "Môn học",
+         "Teacher": "Giảng viên",
+         "StartDate": "Ngày bắt đầu",
+         "Week": "Tuần",
+         "StudentList": "Danh sách sinh viên",
+         "Point": "Điểm",
+         "Rubrics": "Các tiêu chí",
+         "Rate": "Đánh giá",
+         "Index": "Chỉ số",
+         "StudentCode": "Mã sinh viên",
+         "StudentName": "Tên sinh viên",
+         "IsPassed": "Đã qua môn",
+         "Option": "Lựa chọn",
+         "TakeRating": "Đánh giá",
+         "Id": "ID",
+         "Name": "Tên",
+         "Username": "Tên đăng nhập",
+         "Age": "Tuổi",
+         "Address": "Địa chỉ",
+         "Email": "Email",
+         "Phone": "Điện thoại"
+      },
+      "STATISTICAL": {
+         "YourPoint": "Điểm của bạn",
+         "Name": "Tên",
+         "POS": "Điểm môn học",
+         "SETOS": "Thời gian môn học",
+         "Index": "Chỉ số",
+         "ClassCode": "Mã lớp học",
+         "ClassName": "Tên lớp học",
+         "Point10": "Điểm hệ 10",
+         "PointString": "Điểm chữ",
+         "SubjectList": "Danh sách môn học",
+         "Teacher": "Giảng viên",
+         "Week": "Tuần",
+         "ASBS": "Điểm trung bình theo sinh viên",
+         "ASBR": "Điểm trung bình theo tiêu chí",
+         "NOSP": "Số lượng học sinh qua môn",
+         "MaxScore": "Điểm cao nhất",
+         "MinScore": "Điểm thấp nhất"
+      }
    },
-    "OPTION": {
-       "Yes": "Có",
-       "No": "Không",
-       "NONE": "KHÔNG",
-       "READ": "ĐỌC",
-       "EXPORT": "XUẤT",
-       "WRITE": "VIẾT",
-       "IMPORT": "NHẬP",
-       "DELETE": "XÓA"
-    },
-    "QUESTION":{
-       "AreYouSureWantToDeleteTheSelectedItem": "Bạn có muốn xóa những mục đã chọn?"
-    },
-    "TITLE": {
-       "Initializing": "Khởi tạo",
-       "Admin": "Quản trị viên"
-    },
-    "ATTENTION": {
-       "ViewMode": "Chú ý: Đây là chế độ chỉ xem. Bạn không thể sửa bất cứ thứ gì.",
-       "IsMandatory": "là bắt buộc",
-       "MustMumeric": "phải là chữ số",
-       "Required": "Cần thiết",
-       "IsInvalid": "không hợp lệ",
-       "DefaultRoleMode": "Bạn không thể sửa Vai trò mặc định",
-       "MaxLength32": "độ dài tối đa 32",
-       "NotContain": "không bao gồm khoảng trống và ký tự đặc biệt"
-    },
-    "BUTTON": {
-       "Cancel": "Hủy",
-       "Submit": "Gửi đi",
-       "New": "Mới",
-       "Edit": "Sửa",
-       "View": "Xem",
-       "Delete": "Xóa",
-       "Back": "Trở lại",
-       "Change": "Thay đổi",
-       "Create": "Tạo",
-       "Update": "Cập nhật"
-    },
-    "TABLE": {
-       "Select": "Chọn"
-    }
- }
+   "TEACHER": {
+      "LIST": {
+         "SubjectList": "Danh sách môn học",
+         "Teacher": "Giảng viên",
+         "Week": "Tuần",
+         "Teaching": "Đang dạy",
+         "OtherTeacher": "Giảng viên khác",
+         "Taught": "Đã dạy",
+         "RequestRubric": "Tiêu chí yêu cầu",
+         "Name": "Tên"
+      },
+      "ADDRUBRIC": {
+         "AddRubric": "Thêm tiêu chí",
+         "Rubric": "Tiêu chí",
+         "InSubject": "Trong môn học",
+         "TotalPoint": "Điểm tổng",
+         "NotInSubject": "Không ở trong môn học",
+         "ChooseToAdd": "Chọn để thêm"
+      },
+      "POINT": {
+         "View": "Xem",
+         "Update": "Cập nhật =",
+         "Point": "Điểm",
+         "StudentCode": "Mã sinh viên",
+         "StudentName": "Tên sinh viên",
+         "SubjectPoint": "Điểm môn học",
+         "Teacher": "Giảng viên",
+         "Index": "Chỉ số",
+         "Option": "Lựa chọn"
+      },
+      "STATISTICAL": {
+         "SubjectPoint": "Điểm môn học",
+         "Teacher": "Giảng viên",
+         "ASBS": "Điểm trung bình theo học sinh",
+         "ASBR": "Điểm trung bình theo tiêu chí",
+         "MaxScore": "Điểm cao nhất",
+         "MinScore": "Điểm thấp nhất",
+         "NOSP": "Số lượng sinh viên qua môn",
+         "SubjectList": "Danh sách môn học",
+         "Week": "Tuần",
+         "Teaching": "Đang dạy",
+         "OtherTeacher": "Các giảng viên khác",
+         "Taught": "Đã dạy",
+         "StatisticalTeacher": "Thống kê giảng viên",
+         "NOS": "Số lượng sinh viên",
+         "SETOS": "Thời gian môn học",
+         "SR": "Đánh giá môn học",
+         "SRC": "Số lượng đánh giá môn học"
+      }
+   },
+   "ERROR": {
+      "IsRequired": "không thể rỗng",
+      "IsInvalid": "không hợp lệ"
+   },
+   "ALERT": {
+      "OnlyStudentCanRate": "Chỉ sinh viên mới được đánh giá",
+      "OnlyStudentCanComment": "Chỉ sinh viên mới được bình luận"
+   },
+   "NAVBAR": {
+      "Home": "Trang chủ",
+      "Account": "Tài khoản",
+      "All" : "Tất cả",
+      "Setting": "Cài đặt",
+      "Subject": "Môn học",
+      "Statistical": "Thống kê",
+      "Learing": "Đang học",
+      "HaventStudiedYet": "Chưa học",
+      "Studied": "Đã học",
+      "Teaching": "Đang dạy",
+      "HaventTaughtYet": "Chưa dạy",
+      "Taught": "Đã dạy",
+      "Admin": "Quản trị",
+      "Teacher": "Giảng viên",
+      "Student": "Sinh viên",
+      "Rubric": "Tiêu chí",
+      "YourPoint": "Điểm của bạn",
+      "YourClass": "Lớp học của bạn",
+      "YourStatistical": "Thống kê của bạn"
+   },
+   "BUTTON": {
+      "Rate": "Đánh giá",
+      "Cancel": "Hủy",
+      "Submit": "Thực hiện",
+      "Comment": "Bình luận",
+      "Update": "Cập nhật",
+      "New": "Tạo mới",
+      "AddRubrics": "Thêm tiêu chí",
+      "UpdatePoints": "Cập nhật điểm",
+      "ExportPDF": "Export PDF",
+      "ExportExcel": "Export Excel"
+   }
+}

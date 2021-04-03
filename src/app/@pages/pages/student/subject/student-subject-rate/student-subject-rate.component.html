@@ -45,7 +45,7 @@
                     <div class="width-20 float-left">
                         <div class="avatar"></div>
                     </div>
-                    <div class="width-80 float-left">
+                    <div class="width-65 float-left student-name-and-date">
                         <b>{{rating.studentName}}</b><br>
                         <small class="date">2021/03/12 11:17</small>
                     </div>
@@ -56,8 +56,11 @@
                     <div class="progress-bar">
                         <mat-progress-bar mode="determinate" value="{{rating.point}}"></mat-progress-bar>
                     </div>
-                    <div class="messages">
+                    <div class="messages" *ngIf="rating.content.length > 0">
                         <div class="messages-content">{{rating.content}}</div>
+                    </div>
+                    <div class="blank-messages" *ngIf="rating.content.length <= 0">
+
                     </div>
                 </div>
                 <div class="width-20 float-left rating-point-containner">

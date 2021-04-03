@@ -173,15 +173,17 @@ export class YourPointComponent implements OnInit {
     }
 
     getPointText(point: any) {
-        if (point === 0) {
+        if (point <= 0) {
             return 'F';
         } else if (point <= 2) {
-            return 'D';
+            return 'F';
         } else if (point <= 4) {
-            return 'C';
+            return 'D';
         } else if (point <= 6) {
-            return 'B';
+            return 'C';
         } else if (point <= 8) {
+            return 'B';
+        } else if (point <= 9) {
             return 'A';
         } else if (point <= 10) {
             return 'A+';
@@ -189,15 +191,17 @@ export class YourPointComponent implements OnInit {
     }
 
     getPointTextTitle(point: any) {
-        if (point === 0) {
+        if (point <= 0) {
             return 'Chưa hoàn thành';
         } else if (point <= 2) {
-            return 'Hoàn thành, còn mắc nhiều lỗi';
+            return 'Chưa hoàn thành';
         } else if (point <= 4) {
-            return 'Hoàn thành, còn mắc vài lỗi';
+            return 'Hoàn thành, còn mắc nhiều lỗi';
         } else if (point <= 6) {
-            return 'Hoàn thành, đúng hạn';
+            return 'Hoàn thành, còn mắc vài lỗi';
         } else if (point <= 8) {
+            return 'Hoàn thành, đúng hạ';
+        } else if (point <= 9) {
             return 'Hoàn thành tốt, đúng hạn, chất lượng ổn';
         } else if (point <= 10) {
             return 'Hoàn thành xuất sắc, đúng hạn, chất lượng tốt';
@@ -205,15 +209,17 @@ export class YourPointComponent implements OnInit {
     }
 
     getPointClass(point: any) {
-        if (point === 0) {
+        if (point <= 0) {
             return 'pointF';
         } else if (point <= 2) {
-            return 'pointD';
+            return 'pointF';
         } else if (point <= 4) {
-            return 'pointC';
+            return 'pointD';
         } else if (point <= 6) {
-            return 'pointB';
+            return 'pointC';
         } else if (point <= 8) {
+            return 'pointB';
+        } else if (point <= 9) {
             return 'pointA';
         } else if (point <= 10) {
             return 'pointAPlus';
