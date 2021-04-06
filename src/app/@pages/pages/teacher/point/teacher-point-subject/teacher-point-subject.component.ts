@@ -5,6 +5,8 @@ import * as jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import {TeacherPointDialogComponent} from '../dialog/teacher-point-dialog/teacher-point-dialog.component';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatSort} from '@angular/material/sort';
+import {MatTableDataSource} from '@angular/material/table';
 
 @Component({
     selector: 'gts-fe-teacher-point-subject',
@@ -14,9 +16,11 @@ import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 export class TeacherPointSubjectComponent implements OnInit {
 
     @ViewChild('pdf') pdf: ElementRef;
+    @ViewChild(MatSort) sort: MatSort;
 
     displayedColumns: string[] = ['id', 'code', 'name'];
-    dataSource = [];
+    dataSource = new MatTableDataSource();
+    dataSourceData = [];
     id;
     subject;
     data;
@@ -25,6 +29,7 @@ export class TeacherPointSubjectComponent implements OnInit {
     rubrics = [];
     rubricNames = [];
     totalImportant = 0;
+    searchText;
 
     constructor(
         private route: ActivatedRoute,
@@ -54,7 +59,7 @@ export class TeacherPointSubjectComponent implements OnInit {
                 for (let i = 0; i < this.studentPoints[0].studentRubricPointDtoList.length; i++) {
                     const rubric = this.studentPoints[0].studentRubricPointDtoList[i];
                     this.rubricNames.push(rubric.rubricImportantName);
-                        // + ' [' + ((100 * rubric.rubricImportantImportant / this.totalImportant).toFixed(2)) + '%]');
+                    // + ' [' + ((100 * rubric.rubricImportantImportant / this.totalImportant).toFixed(2)) + '%]');
                     this.displayedColumns.push('rubric' + i);
                     this.rubrics.push('rubric' + i);
                 }
@@ -82,24 +87,29 @@ export class TeacherPointSubjectComponent implements OnInit {
                         };
                         d.points.push(point);
                     }
-                    this.dataSource.push(d);
+                    this.dataSourceData.push(d);
                 }
-                this.dataSource.sort(
+                this.dataSourceData.sort(
                     (a, b) => {
                         const aData = a.name.split(' ');
                         const bData = b.name.split(' ');
                         const aLastName = aData[aData.length - 1];
                         const bLastName = bData[bData.length - 1];
-                        return aLastName.localeCompare(bLastName)
+                        return aLastName.localeCompare(bLastName);
                     }
                 );
+                this.dataSource = new MatTableDataSource(this.dataSourceData);
             }
         });
     }
 
+    ngAfterViewInit() {
+        this.dataSource.sort = this.sort;
+    }
+
     view(id) {
         this.dialog.open(TeacherPointDialogComponent, {
-            data: { classId: this.id, studentId: id },
+            data: {classId: this.id, studentId: id},
         });
     }
 

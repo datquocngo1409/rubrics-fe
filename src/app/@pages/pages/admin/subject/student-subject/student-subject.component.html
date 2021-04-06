@@ -16,14 +16,12 @@
                     <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
                         <mat-form-field class="full-wid mrgn-b-md">
                             <mat-label>{{'ADMIN.CRUD.SUBJECT.Name'|translate}} *</mat-label>
-                            <label>
-                                <input matInput formControlName="name">
-                                <small class="gene-block"
-                                       *ngIf="detailForm.controls['name'].errors && detailForm.controls['name'].touched"
-                                       class="warn-text">
-                                    {{'ADMIN.CRUD.SUBJECT.Name'|translate}} {{'ATTENTION.Required' | translate}}
-                                </small>
-                            </label>
+                            <input matInput formControlName="name">
+                            <small class="gene-block"
+                                   *ngIf="detailForm.controls['name'].errors && detailForm.controls['name'].touched"
+                                   class="warn-text">
+                                {{'ADMIN.CRUD.SUBJECT.Name'|translate}} {{'ATTENTION.Required' | translate}}
+                            </small>
                         </mat-form-field>
                     </div>
                 </div>
@@ -31,12 +29,23 @@
                     <div class="deviceDto">
                         <div class="choosedDevices">
                             <h3>{{'ADMIN.CRUD.SUBJECT.InSubject' | translate}}</h3>
+                            <div class="input-group mb-3 input-group-sm" style="width: 95%; margin-left: 5%">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Search</span>
+                                </div>
+                                <input class="form-control" type="text" name="search" [(ngModel)]="searchLeftText"
+                                       formControlName="searchLeftText" autocomplete="off">
+                            </div>
                             <div class="containerDevices">
                                 <ul class="responsive-table">
                                     <li class="table-row {{this.isSelectedChoosed(i)}}"
-                                        *ngFor="let student of choosedStudent; index as i" (click)="selectChoosedDevice(i)">
-                                        <div class="col col-5"><span title="[{{student.id}}] {{student.username}}">[{{student.id}}] {{student.username}}</span></div>
-                                        <div class="col col-5"><span title="{{student.name}}">{{student.name}}</span></div>
+                                        *ngFor="let student of choosedStudent | filter:searchLeftText; index as i"
+                                        (click)="selectChoosedDevice(i)">
+                                        <div class="col col-5"><span
+                                                title="[{{student.code}}] {{student.username}}">[{{student.code}}
+                                            ]</span></div>
+                                        <div class="col col-5"><span title="{{student.name}}">{{student.name}}</span>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -49,13 +58,23 @@
                         </div>
                         <div class="unchoosedDevices">
                             <h3>{{'ADMIN.CRUD.SUBJECT.NotInSubject' | translate}}</h3>
+                            <div class="input-group mb-3 input-group-sm" style="width: 95%; margin-left: 5%">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Search</span>
+                                </div>
+                                <input class="form-control" type="text" name="search" [(ngModel)]="searchRightText"
+                                       formControlName="searchLeftText" autocomplete="off">
+                            </div>
                             <div class="containerDevices">
                                 <ul class="responsive-table">
                                     <li class="table-row {{this.isSelectedUnchoosed(i)}}"
-                                        *ngFor="let student of unchoosedStudent; index as i"
+                                        *ngFor="let student of unchoosedStudent | filter:searchRightText; index as i"
                                         (click)="selectUnchoosedDevice(i)">
-                                        <div class="col col-5"><span title="[{{student.id}}] {{student.username}}">[{{student.id}}] {{student.username}}</span></div>
-                                        <div class="col col-5"><span title="{{student.name}}">{{student.name}}</span></div>
+                                        <div class="col col-5"><span
+                                                title="[{{student.code}}] {{student.username}}">[{{student.code}}
+                                            ] {{student.username}}</span></div>
+                                        <div class="col col-5"><span title="{{student.name}}">{{student.name}}</span>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

@@ -1,6 +1,6 @@
 <h3 class="header">{{"TEACHER.LIST.SubjectList" | translate}}</h3>
 <div class="left-content">
-    <mat-card *ngFor="let subject of subjects" (click)="viewDetail(subject.id, subject.teacherId)"
+    <mat-card style="cursor: pointer" *ngFor="let subject of subjects" (click)="viewDetail(subject.id, subject.teacherId)"
               [ngClass]="isTeaching(subject.teacherId, subject.startDate)">
         <mat-card-header>
             <mat-card-title>

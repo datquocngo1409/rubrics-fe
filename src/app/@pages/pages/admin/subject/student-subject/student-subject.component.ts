@@ -22,6 +22,8 @@ export class StudentSubjectComponent implements OnInit {
     currentUser;
     oldStudentIDList = '';
     newStudentIDList = '';
+    searchLeftText;
+    searchRightText;
 
     constructor(
         private route: ActivatedRoute,
@@ -39,8 +41,8 @@ export class StudentSubjectComponent implements OnInit {
             this.detailForm = this.formBuild.group({
                 id: [''],
                 name: ['', Validators.required],
-                devicesDto: [],
-                accountId: [],
+                searchLeftText: [''],
+                searchRightText: [''],
             });
             const id = +this.route.snapshot.paramMap.get('id');
             this.id = id;
@@ -61,7 +63,7 @@ export class StudentSubjectComponent implements OnInit {
                     this.selectedChoosed = [];
                     this.selectedUnchoosed = [];
                     for (const student of this.students) {
-                        const d = {id: student.id, username: student.username, name: student.name};
+                        const d = {id: student.id, username: student.username, name: student.name, code: student.code};
                         this.unchoosedStudent.push(d);
                     }
                     if (this.choosedStudent !== null) {

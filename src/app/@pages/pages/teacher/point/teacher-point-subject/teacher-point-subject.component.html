@@ -23,26 +23,26 @@
 </div>
 <div class="margin-top-20">
     <kendo-pdf-export #pdf paperSize="A2" margin="2cm">
-        <table mat-table id="pdf" #pdf matTableExporter #exporter="matTableExporter" [dataSource]="dataSource"
+        <table matSort mat-table id="pdf" #pdf matTableExporter #exporter="matTableExporter" [dataSource]="dataSource"
                class="mat-elevation-z8 margin-top-20">
 
             <ng-container matColumnDef="id">
-                <th mat-header-cell *matHeaderCellDef>{{"TEACHER.POINT.Index" | translate}}</th>
+                <th mat-header-cell mat-sort-header *matHeaderCellDef>{{"TEACHER.POINT.Index" | translate}}</th>
                 <td mat-cell *matCellDef="let element; index as i">{{i + 1}}</td>
             </ng-container>
 
             <ng-container matColumnDef="code">
-                <th mat-header-cell *matHeaderCellDef>{{"TEACHER.POINT.StudentCode" | translate}}</th>
+                <th mat-header-cell mat-sort-header *matHeaderCellDef>{{"TEACHER.POINT.StudentCode" | translate}}</th>
                 <td mat-cell *matCellDef="let element">{{element.code}}</td>
             </ng-container>
 
             <ng-container matColumnDef="name">
-                <th mat-header-cell *matHeaderCellDef>{{"TEACHER.POINT.StudentName" | translate}}</th>
+                <th mat-header-cell mat-sort-header *matHeaderCellDef>{{"TEACHER.POINT.StudentName" | translate}}</th>
                 <td mat-cell *matCellDef="let element">{{element.name}}</td>
             </ng-container>
 
             <ng-container *ngFor="let rubric of rubrics; index as i" matColumnDef="rubric{{i}}">
-                <th mat-header-cell *matHeaderCellDef>{{rubricNames[i]}}</th>
+                <th mat-header-cell mat-sort-header *matHeaderCellDef>{{rubricNames[i]}}</th>
                 <td mat-cell *matCellDef="let element" title="{{getPointTextTitle(element.points[i]?.point)}}">
                     <span class="{{getPointClass(element.points[i]?.point)}}">
                         <b>{{getPointText(element.points[i]?.point)}}</b>

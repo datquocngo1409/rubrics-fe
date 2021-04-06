@@ -36,6 +36,7 @@ import { AdminStatisticalDetailTeacherComponent } from './statistical/teacher/ad
 import { AdminStatisticalRubricComponent } from './statistical/rubric/admin-statistical-rubric/admin-statistical-rubric.component';
 import { AdminStatisticalListSubjectComponent } from './statistical/subject/admin-statistical-list-subject/admin-statistical-list-subject.component';
 import { AdminStatisticalDetailSubjectComponent } from './statistical/subject/admin-statistical-detail-subject/admin-statistical-detail-subject.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
@@ -78,7 +79,8 @@ import { AdminStatisticalDetailSubjectComponent } from './statistical/subject/ad
         FormsModule,
         MatDatepickerModule,
         ChartModule,
-        NgApexchartsModule
+        NgApexchartsModule,
+        Ng2SearchPipeModule
     ]
 })
 export class AdminModule { }
